@@ -1,0 +1,2 @@
+Page Order,Semantic Name,Element Type,Logical Name,Playwright Best,Relative XPath,Absolute XPath,CSS Selector,ID Attribute,Name Attribute,Class Name,Coordinates,Dimension,Confidence Score
+1,example_domain_learn_more,Link,Learn more - Example Domain,"await page.getByRole('link', name='Learn more')",//body/div/p[2]/a,/html[1]/body[1]/div[1]/p[2]/a[1],html > body > div > p:nth-of-type(2) > a,,,,"(380.796875, 217.96875)",80.125 × 21,90

@@ -1,0 +1,18 @@
+[
+    {
+        "page_number": 1,
+        "title": "Example Domain",
+        "url": "https://example.com/",
+        "reason": "initial navigation",
+        "folder": "output\\execution_run_20260528_154300\\pages\\01_example_domain",
+        "json": "output\\execution_run_20260528_154300\\pages\\01_example_domain\\dom_observation.json"
+    },
+    {
+        "page_number": 2,
+        "title": "Example Domains",
+        "url": "https://www.iana.org/help/example-domains",
+        "reason": "after action: click Learn more",
+        "folder": "output\\execution_run_20260528_154300\\pages\\02_example_domains",
+        "json": "output\\execution_run_20260528_154300\\pages\\02_example_domains\\dom_observation.json"
+    }
+]

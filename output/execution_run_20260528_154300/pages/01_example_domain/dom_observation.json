@@ -1,0 +1,33 @@
+{
+    "url": "https://example.com/",
+    "title": "Example Domain",
+    "capture_reason": "initial navigation",
+    "full_page_screenshot": "output\\execution_run_20260528_154300\\pages\\01_example_domain\\full_page.png",
+    "total_interactive_elements": 1,
+    "elements": [
+        {
+            "element_index": 0,
+            "page_order": 1,
+            "semantic_name": "example_domain_learn_more",
+            "tag_name": "a",
+            "inner_text": "Learn more",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": ""
+            },
+            "context_hint": "Example Domain",
+            "abs_xpath": "/html[1]/body[1]/div[1]/p[2]/a[1]",
+            "rel_xpath": "//body/div/p[2]/a",
+            "css_path": "html > body > div > p:nth-of-type(2) > a",
+            "bounding_box": {
+                "x": 380.796875,
+                "y": 217.96875,
+                "width": 80.125,
+                "height": 21
+            },
+            "screenshot_path": "output\\execution_run_20260528_154300\\pages\\01_example_domain\\0001_example_domain_learn_more.png"
+        }
+    ]
+}
