@@ -52,6 +52,8 @@ def determine_logical_name(el):
         if context and context.lower() not in attrs["aria-label"].lower():
             return f"{attrs['aria-label']} - {context}"
         return attrs["aria-label"]
+    if attrs.get("alt"): return attrs["alt"]
+    if attrs.get("title"): return attrs["title"]
     if attrs.get("name"): return attrs["name"]
     if attrs.get("id"): return attrs["id"]
     return "Unknown Context"

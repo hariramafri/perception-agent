@@ -76,9 +76,12 @@ def build_semantic_name(data):
     tag_name = data["tagName"]
     inner_text = re.sub(r'\s+', ' ', data.get("innerText", "")).strip()
     aria_label = re.sub(r'\s+', ' ', data.get("ariaLabel", "")).strip()
+    alt_text = re.sub(r'\s+', ' ', data.get("alt", "")).strip()
+    title_text = re.sub(r'\s+', ' ', data.get("title", "")).strip()
+    child_image_text = re.sub(r'\s+', ' ', data.get("childImageText", "")).strip()
     context_hint = data.get("contextHint", "")
 
-    base_source = inner_text or aria_label or data.get("name") or data.get("id") or tag_name
+    base_source = inner_text or aria_label or alt_text or title_text or child_image_text or data.get("name") or data.get("id") or tag_name
     base_name = clean_slug(base_source)
     if not base_name:
         base_name = tag_name
@@ -91,6 +94,55 @@ def build_semantic_name(data):
         base_name = f"{base_name}_{tag_name}"
 
     return base_name[:50].rstrip('_')
+
+def element_priority(data):
+    tag_name = data.get("tagName", "")
+    role = data.get("role", "")
+    if tag_name in {"input", "select", "textarea", "button"}:
+        return 100
+    if tag_name == "a":
+        return 90
+    if role in {"button", "link", "menuitem", "option", "checkbox", "radio", "tab", "switch", "textbox", "searchbox", "combobox"}:
+        return 85
+    if tag_name in {"label", "summary", "details"}:
+        return 75
+    if tag_name in {"h1", "h2", "h3", "h4", "h5", "h6"}:
+        return 65
+    if tag_name == "img":
+        return 40
+    return 30
+
+def overlap_ratio_of_smaller(first, second):
+    ax1, ay1 = float(first.get("x", 0)), float(first.get("y", 0))
+    ax2, ay2 = ax1 + float(first.get("width", 0)), ay1 + float(first.get("height", 0))
+    bx1, by1 = float(second.get("x", 0)), float(second.get("y", 0))
+    bx2, by2 = bx1 + float(second.get("width", 0)), by1 + float(second.get("height", 0))
+    inter_w = max(0, min(ax2, bx2) - max(ax1, bx1))
+    inter_h = max(0, min(ay2, by2) - max(ay1, by1))
+    inter_area = inter_w * inter_h
+    first_area = max(1, float(first.get("width", 0)) * float(first.get("height", 0)))
+    second_area = max(1, float(second.get("width", 0)) * float(second.get("height", 0)))
+    return inter_area / min(first_area, second_area)
+
+def dedupe_overlapping_elements(elements_data):
+    prioritized = sorted(
+        elements_data,
+        key=lambda item: (
+            -element_priority(item),
+            -(float(item.get("width", 0)) * float(item.get("height", 0))),
+            float(item.get("y", 0)),
+            float(item.get("x", 0)),
+        )
+    )
+    kept = []
+    for candidate in prioritized:
+        if any(overlap_ratio_of_smaller(candidate, existing) >= 0.88 for existing in kept):
+            continue
+        kept.append(candidate)
+    return sorted(
+        kept,
+        key=lambda item: (round(float(item.get("y", 0)) / 8) * 8, float(item.get("x", 0)))
+    )
 
 # --- 3. EXTRACTION MODULE ---
 def extract_visible_elements(driver, output_dir, telemetry, full_screenshot_path, offset_index=0):
@@ -141,12 +193,22 @@ def extract_visible_elements(driver, output_dir, telemetry, full_screenshot_path
             if (rect.top > Math.max(document.documentElement.scrollHeight, window.innerHeight)) return false;
             
             // Semantic Check
+            var tag = el.tagName.toLowerCase();
+            var role = el.getAttribute('role') || '';
             var hasText = el.innerText && el.innerText.trim().length > 0;
             var hasAria = el.getAttribute('aria-label') && el.getAttribute('aria-label').trim().length > 0;
             var hasId = el.id && el.id.trim().length > 0;
             var hasName = el.name && el.name.trim().length > 0;
-            var isInput = el.tagName.toLowerCase() === 'input' || el.tagName.toLowerCase() === 'textarea' || el.tagName.toLowerCase() === 'select';
-            if (!hasText && !hasAria && !hasId && !hasName && !isInput) return false;
+            var hasAlt = el.getAttribute('alt') && el.getAttribute('alt').trim().length > 0;
+            var hasTitle = el.getAttribute('title') && el.getAttribute('title').trim().length > 0;
+            var hasRole = el.getAttribute('role') && el.getAttribute('role').trim().length > 0;
+            var hasOnClick = el.getAttribute('onclick') || (style.cursor === 'pointer');
+            var hasDataLocator = el.getAttribute('data-testid') || el.getAttribute('data-test') || el.getAttribute('data-cy');
+            var isInput = tag === 'input' || tag === 'textarea' || tag === 'select';
+            var isSemanticTag = ['img', 'label', 'summary', 'details', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'].indexOf(tag) !== -1;
+            var isActionRole = ['button', 'link', 'menuitem', 'option', 'checkbox', 'radio', 'tab', 'switch', 'textbox', 'searchbox', 'combobox'].indexOf(role) !== -1;
+            if ((tag === 'div' || tag === 'span') && el.innerText && el.innerText.trim().length > 160 && !isActionRole && !hasOnClick && !hasDataLocator) return false;
+            if (!hasText && !hasAria && !hasId && !hasName && !hasAlt && !hasTitle && !hasRole && !hasOnClick && !hasDataLocator && !isInput && !isSemanticTag) return false;
             
             var parent = el.parentElement;
             while (parent && parent !== document.body && parent !== document.documentElement) {
@@ -269,7 +331,44 @@ def extract_visible_elements(driver, output_dir, telemetry, full_screenshot_path
             return path.join(" > ");
         }
 
-        var selectors = "button, input, a, select, textarea, [role='button'], [tabindex]:not([tabindex='-1'])";
+        var selectors = [
+            "button",
+            "input",
+            "a",
+            "select",
+            "textarea",
+            "summary",
+            "details",
+            "label",
+            "img[alt]",
+            "img[title]",
+            "h1",
+            "h2",
+            "h3",
+            "h4",
+            "h5",
+            "h6",
+            "[onclick]",
+            "[contenteditable='true']",
+            "[data-testid]",
+            "[data-test]",
+            "[data-cy]",
+            "[aria-label]",
+            "[title]",
+            "[role='button']",
+            "[role='link']",
+            "[role='menuitem']",
+            "[role='option']",
+            "[role='checkbox']",
+            "[role='radio']",
+            "[role='tab']",
+            "[role='switch']",
+            "[role='textbox']",
+            "[role='searchbox']",
+            "[role='combobox']",
+            "[role='img']",
+            "[tabindex]:not([tabindex='-1'])"
+        ].join(", ");
         var elements = document.querySelectorAll(selectors);
         var results = [];
         for (var i = 0; i < elements.length; i++) {
@@ -278,6 +377,7 @@ def extract_visible_elements(driver, output_dir, telemetry, full_screenshot_path
             if (!isElementVisible(el)) continue;
             
             var rect = el.getBoundingClientRect();
+            var childImage = el.querySelector ? el.querySelector('img[alt], img[title]') : null;
             
             results.push({
                 index: i,
@@ -287,6 +387,11 @@ def extract_visible_elements(driver, output_dir, telemetry, full_screenshot_path
                 className: typeof el.className === 'string' ? el.className : (el.getAttribute('class') || ''),
                 name: el.name || el.getAttribute('name') || '',
                 ariaLabel: el.getAttribute('aria-label') || '',
+                alt: el.getAttribute('alt') || '',
+                title: el.getAttribute('title') || '',
+                childImageText: childImage ? (childImage.getAttribute('alt') || childImage.getAttribute('title') || '') : '',
+                role: el.getAttribute('role') || '',
+                testId: el.getAttribute('data-testid') || el.getAttribute('data-test') || el.getAttribute('data-cy') || '',
                 contextHint: getContext(el),
                 absXPath: getAbsXPath(el),
                 relXPath: getRelXPath(el),
@@ -304,6 +409,11 @@ def extract_visible_elements(driver, output_dir, telemetry, full_screenshot_path
             elements_data,
             key=lambda item: (round(float(item.get("y", 0)) / 8) * 8, float(item.get("x", 0)))
         )
+        before_dedupe = len(elements_data)
+        elements_data = dedupe_overlapping_elements(elements_data)
+        removed_duplicates = before_dedupe - len(elements_data)
+        if removed_duplicates:
+            telemetry.log("INFO", f"Removed {removed_duplicates} overlapping duplicate elements.")
         
     with telemetry.track_action(f"Cropping {len(elements_data)} Element Screenshots"):
         try:
@@ -368,7 +478,11 @@ def extract_visible_elements(driver, output_dir, telemetry, full_screenshot_path
                             "id": data["id"],
                             "class": data["className"],
                             "name": data["name"],
-                            "aria-label": aria_label
+                            "aria-label": aria_label,
+                            "alt": data.get("alt", ""),
+                            "title": data.get("title", ""),
+                            "role": data.get("role", ""),
+                            "data-testid": data.get("testId", "")
                         },
                         "context_hint": context_hint,
                         "abs_xpath": data.get("absXPath", ""),

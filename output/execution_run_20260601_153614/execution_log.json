@@ -1,0 +1,25 @@
+[
+    {
+        "timestamp": "2026-06-01T15:36:33",
+        "status": "ok",
+        "message": "Opened starting URL: https://www.amazon.com/",
+        "action": {
+            "action": "open",
+            "target": "https://amazon.com"
+        },
+        "matched_element": "",
+        "url": "https://www.amazon.com/"
+    },
+    {
+        "timestamp": "2026-06-01T15:36:56",
+        "status": "needs_perception_guidance",
+        "message": "Could not confidently resolve target 'Learn more'. Top candidates: ['explore_more_gifts_explore_more_gifts_a', 'fashion_trends_you_like_explore_more_explore_more', 'best_sellers_in_home_kitchen_have_more_fun_with_fa', 'have_more_fun_with_family_outdoor_play_sets', 'have_more_fun_with_family_learning_toys']",
+        "action": {
+            "action": "click",
+            "target": "Learn more",
+            "raw": "click Learn more"
+        },
+        "matched_element": "",
+        "url": "https://www.amazon.com/"
+    }
+]

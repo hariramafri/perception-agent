@@ -1,0 +1,18 @@
+[
+    {
+        "page_number": 1,
+        "title": "Amazon.com. Spend less. Smile more.",
+        "url": "https://www.amazon.com/",
+        "reason": "initial navigation",
+        "folder": "output\\execution_run_20260601_153614\\pages\\01_amazon_com_spend_less_smile_more",
+        "json": "output\\execution_run_20260601_153614\\pages\\01_amazon_com_spend_less_smile_more\\dom_observation.json"
+    },
+    {
+        "page_number": 2,
+        "title": "Amazon.com. Spend less. Smile more.",
+        "url": "https://www.amazon.com/",
+        "reason": "confusion: could not resolve Learn more",
+        "folder": "output\\execution_run_20260601_153614\\pages\\02_amazon_com_spend_less_smile_more",
+        "json": "output\\execution_run_20260601_153614\\pages\\02_amazon_com_spend_less_smile_more\\dom_observation.json"
+    }
+]

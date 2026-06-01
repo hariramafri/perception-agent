@@ -145,6 +145,10 @@ def score_element(element, query):
         element.get("inner_text", ""),
         element.get("context_hint", ""),
         attrs.get("aria-label", ""),
+        attrs.get("alt", ""),
+        attrs.get("title", ""),
+        attrs.get("role", ""),
+        attrs.get("data-testid", ""),
         attrs.get("id", ""),
         attrs.get("name", ""),
     ]
@@ -275,7 +279,12 @@ def write_xlsx(path, sheets):
 <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">""" + "".join(workbook_rels) + "</Relationships>")
         for i, sheet in enumerate(sheets, start=1):
             rows = sheet["rows"]
-            headers = list(rows[0].keys()) if rows else ["Status"]
+            headers = []
+            for row in rows:
+                for key in row.keys():
+                    if key not in headers:
+                        headers.append(key)
+            headers = headers or ["Status"]
             xml_rows = []
             all_rows = [dict(zip(headers, headers))] + rows
             for row_idx, row in enumerate(all_rows, start=1):
@@ -297,6 +306,7 @@ class ExecutionAgent:
         self.driver = None
         self.pages = []
         self.execution_log = []
+        self.agent_handoffs = []
         self.current_data = None
         self.current_page_dir = None
 
@@ -310,6 +320,7 @@ class ExecutionAgent:
             self.driver.quit()
 
     def capture_page(self, reason):
+        self.log_agent_switch("Execution Agent", "Perception Agent", f"Capture requested: {reason}")
         label = page_label(self.driver)
         page_number = len(self.pages) + 1
         folder = f"{page_number:02d}_{safe_slug(label)}"
@@ -346,7 +357,22 @@ class ExecutionAgent:
         self.pages.append(page_record)
         self.current_data = data
         self.current_page_dir = page_dir
+        self.log_agent_switch("Perception Agent", "Execution Agent", f"Capture complete: {label}")
         return page_record
+
+    def log_agent_switch(self, from_agent, to_agent, reason):
+        event = {
+            "timestamp": datetime.now().isoformat(timespec="seconds"),
+            "status": "agent_switch",
+            "from_agent": from_agent,
+            "to_agent": to_agent,
+            "reason": reason,
+            "url": self.driver.current_url if self.driver else "",
+        }
+        self.agent_handoffs.append(event)
+        self.execution_log.append(event)
+        if hasattr(self, "telemetry") and self.telemetry:
+            self.telemetry.log("AGENT_SHIFT", f"{from_agent} -> {to_agent}: {reason}")
 
     def log(self, status, message, action=None, element=None):
         self.execution_log.append({
@@ -431,10 +457,17 @@ class ExecutionAgent:
                 "name": sheet_name("Execution Log", used_sheet_names),
                 "rows": self.execution_log,
             })
+        if self.agent_handoffs:
+            sheets.append({
+                "name": sheet_name("Agent Handoffs", used_sheet_names),
+                "rows": self.agent_handoffs,
+            })
         workbook_path = os.path.join(self.run_dir, "perception_execution_report.xlsx")
         write_xlsx(workbook_path, sheets)
         with open(os.path.join(self.run_dir, "execution_log.json"), "w", encoding="utf-8") as f:
             json.dump(self.execution_log, f, indent=4)
+        with open(os.path.join(self.run_dir, "agent_handoffs.json"), "w", encoding="utf-8") as f:
+            json.dump(self.agent_handoffs, f, indent=4)
         with open(os.path.join(self.run_dir, "page_manifest.json"), "w", encoding="utf-8") as f:
             json.dump(self.pages, f, indent=4)
         return workbook_path
@@ -445,6 +478,7 @@ class ExecutionAgent:
             raise ValueError("No starting URL found in instructions. Include a full http:// or https:// URL.")
         self.start()
         try:
+            self.log_agent_switch("Perception Agent", "Execution Agent", "Instruction requires browser execution.")
             final_url = navigate_to_url(self.driver, url, self.telemetry)
             self.log("ok", f"Opened starting URL: {final_url}", {"action": "open", "target": url})
             self.capture_page("initial navigation")
