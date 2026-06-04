@@ -1,0 +1,81 @@
+[
+    {
+        "timestamp": "2026-06-04T12:51:38",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Instruction requires browser execution.",
+        "url": "data:,"
+    },
+    {
+        "timestamp": "2026-06-04T12:51:43",
+        "status": "ok",
+        "message": "Opened starting URL: https://www.demoblaze.com/",
+        "action": {
+            "action": "open",
+            "target": "https://www.demoblaze.com"
+        },
+        "matched_element": "",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:51:43",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: initial navigation",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:51:45",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: STORE",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:51:45",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Resolve target for action: click laptops",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:51:45",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Resolved 'laptops' to samsung_galaxy_s6_laptops with score 100",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:51:46",
+        "status": "ok",
+        "message": "Clicked samsung_galaxy_s6_laptops.",
+        "action": {
+            "action": "click",
+            "target": "laptops",
+            "raw": "click laptops"
+        },
+        "matched_element": "samsung_galaxy_s6_laptops",
+        "url": "https://www.demoblaze.com/#"
+    },
+    {
+        "timestamp": "2026-06-04T12:51:46",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: after action",
+        "url": "https://www.demoblaze.com/#"
+    },
+    {
+        "timestamp": "2026-06-04T12:51:47",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: STORE",
+        "url": "https://www.demoblaze.com/#"
+    }
+]

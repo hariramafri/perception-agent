@@ -1,0 +1,513 @@
+{
+    "url": "https://automationexercise.com/",
+    "title": "Automation Exercise",
+    "capture_reason": "confusion: could not resolve view cart",
+    "full_page_screenshot": "output\\execution_run_20260603_143045\\pages\\03_automation_exercise\\full_page.png",
+    "total_interactive_elements": 18,
+    "elements": [
+        {
+            "element_index": 0,
+            "page_order": 1,
+            "semantic_name": "view_product_a",
+            "tag_name": "a",
+            "inner_text": "View Product",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[35]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+            "rel_xpath": "//body[1]/section[2]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-9 padding-right')][2]/div[contains(@class, 'features_items')][1]/div[contains(@class, 'col-sm-4')][35]/div[contains(@class, 'product-image-wrapper')]/div[contains(@class, 'choose')][2]/ul[contains(@class, 'nav nav-pills nav-justified')]/li/a",
+            "css_path": "html > body > section:nth-of-type(2) > div.container > div.row > div.col-sm-9 padding-right:nth-of-type(2) > div.features_items > div.col-sm-4:nth-of-type(35) > div.product-image-wrapper > div.choose:nth-of-type(2) > ul.nav nav-pills nav-justified > li > a",
+            "bounding_box": {
+                "x": 994.96875,
+                "y": 7510.640625,
+                "width": 247.484375,
+                "height": 38.5625
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 1,
+            "page_order": 2,
+            "semantic_name": "features_items_recommended_items_h2",
+            "tag_name": "h2",
+            "inner_text": "RECOMMENDED ITEMS",
+            "attributes": {
+                "id": "",
+                "class": "title text-center",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "FEATURES ITEMS",
+            "abs_xpath": "/html[1]/body[1]/section[2]/div[1]/div[1]/div[2]/div[2]/h2[1]",
+            "rel_xpath": "//body[1]/section[2]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-9 padding-right')][2]/div[contains(@class, 'recommended_items')][2]/h2[contains(@class, 'title text-center')][1]",
+            "css_path": "html > body > section:nth-of-type(2) > div.container > div.row > div.col-sm-9 padding-right:nth-of-type(2) > div.recommended_items:nth-of-type(2) > h2.title text-center",
+            "bounding_box": {
+                "x": 415,
+                "y": 7584.203125,
+                "width": 832.5,
+                "height": 19.796875
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 2,
+            "page_order": 3,
+            "semantic_name": "ecommerce_website_products_img",
+            "tag_name": "img",
+            "inner_text": "",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "ecommerce website products",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Rs. 1500",
+            "abs_xpath": "/html[1]/body[1]/section[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/img[1]",
+            "rel_xpath": "//div[@id='recommended-item-carousel']/div[contains(@class, 'carousel-inner')][1]/div[contains(@class, 'item active')][2]/div[contains(@class, 'col-sm-4')][1]/div[contains(@class, 'product-image-wrapper')]/div[contains(@class, 'single-products')]/div[contains(@class, 'productinfo text-center')]/img[1]",
+            "css_path": "div#recommended-item-carousel > div.carousel-inner > div.item active:nth-of-type(2) > div.col-sm-4 > div.product-image-wrapper > div.single-products > div.productinfo text-center > img",
+            "bounding_box": {
+                "x": 420,
+                "y": 7639,
+                "width": 247.484375,
+                "height": 229.9375
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 3,
+            "page_order": 4,
+            "semantic_name": "ecommerce_website_products_img_order_3",
+            "tag_name": "img",
+            "inner_text": "",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "ecommerce website products",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Rs. 600",
+            "abs_xpath": "/html[1]/body[1]/section[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/img[1]",
+            "rel_xpath": "//div[@id='recommended-item-carousel']/div[contains(@class, 'carousel-inner')][1]/div[contains(@class, 'item active')][2]/div[contains(@class, 'col-sm-4')][2]/div[contains(@class, 'product-image-wrapper')]/div[contains(@class, 'single-products')]/div[contains(@class, 'productinfo text-center')]/img[1]",
+            "css_path": "div#recommended-item-carousel > div.carousel-inner > div.item active:nth-of-type(2) > div.col-sm-4:nth-of-type(2) > div.product-image-wrapper > div.single-products > div.productinfo text-center > img",
+            "bounding_box": {
+                "x": 707.484375,
+                "y": 7639,
+                "width": 247.484375,
+                "height": 229.9375
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 4,
+            "page_order": 5,
+            "semantic_name": "ecommerce_website_products_img_order_4",
+            "tag_name": "img",
+            "inner_text": "",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "ecommerce website products",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Rs. 400",
+            "abs_xpath": "/html[1]/body[1]/section[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/img[1]",
+            "rel_xpath": "//div[@id='recommended-item-carousel']/div[contains(@class, 'carousel-inner')][1]/div[contains(@class, 'item active')][2]/div[contains(@class, 'col-sm-4')][3]/div[contains(@class, 'product-image-wrapper')]/div[contains(@class, 'single-products')]/div[contains(@class, 'productinfo text-center')]/img[1]",
+            "css_path": "div#recommended-item-carousel > div.carousel-inner > div.item active:nth-of-type(2) > div.col-sm-4:nth-of-type(3) > div.product-image-wrapper > div.single-products > div.productinfo text-center > img",
+            "bounding_box": {
+                "x": 994.96875,
+                "y": 7639,
+                "width": 247.484375,
+                "height": 229.9375
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 5,
+            "page_order": 6,
+            "semantic_name": "rs_500_blue_top_add_to_cart_a",
+            "tag_name": "a",
+            "inner_text": "",
+            "attributes": {
+                "id": "",
+                "class": "left recommended-item-control",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Rs. 500\n\t\t\t\t\t\t\t\t\t\t\t\t\tBlue Top\n\t\t\t\t\t\t\t\t\t\t\t\t\tAdd to cart",
+            "abs_xpath": "/html[1]/body[1]/section[2]/div[1]/div[1]/div[2]/div[2]/div[1]/a[1]",
+            "rel_xpath": "//div[@id='recommended-item-carousel']/a[contains(@class, 'left recommended-item-control')][1]",
+            "css_path": "div#recommended-item-carousel > a.left recommended-item-control",
+            "bounding_box": {
+                "x": 400,
+                "y": 7804.859375,
+                "width": 27.15625,
+                "height": 28
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 6,
+            "page_order": 7,
+            "semantic_name": "rs_500_blue_top_add_to_cart_a_order_6",
+            "tag_name": "a",
+            "inner_text": "",
+            "attributes": {
+                "id": "",
+                "class": "right recommended-item-control",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Rs. 500\n\t\t\t\t\t\t\t\t\t\t\t\t\tBlue Top\n\t\t\t\t\t\t\t\t\t\t\t\t\tAdd to cart",
+            "abs_xpath": "/html[1]/body[1]/section[2]/div[1]/div[1]/div[2]/div[2]/div[1]/a[2]",
+            "rel_xpath": "//div[@id='recommended-item-carousel']/a[contains(@class, 'right recommended-item-control')][2]",
+            "css_path": "div#recommended-item-carousel > a.right recommended-item-control:nth-of-type(2)",
+            "bounding_box": {
+                "x": 1235.34375,
+                "y": 7804.859375,
+                "width": 27.15625,
+                "height": 28
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 7,
+            "page_order": 8,
+            "semantic_name": "rs_1500_stylish_dress_add_to_cart_rs_1500_h2",
+            "tag_name": "h2",
+            "inner_text": "Rs. 1500",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Rs. 1500\n\nStylish Dress\n\nAdd to cart",
+            "abs_xpath": "/html[1]/body[1]/section[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/h2[1]",
+            "rel_xpath": "//div[@id='recommended-item-carousel']/div[contains(@class, 'carousel-inner')][1]/div[contains(@class, 'item active')][2]/div[contains(@class, 'col-sm-4')][1]/div[contains(@class, 'product-image-wrapper')]/div[contains(@class, 'single-products')]/div[contains(@class, 'productinfo text-center')]/h2[1]",
+            "css_path": "div#recommended-item-carousel > div.carousel-inner > div.item active:nth-of-type(2) > div.col-sm-4 > div.product-image-wrapper > div.single-products > div.productinfo text-center > h2",
+            "bounding_box": {
+                "x": 420,
+                "y": 7878.9375,
+                "width": 247.484375,
+                "height": 26.390625
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 8,
+            "page_order": 9,
+            "semantic_name": "rs_600_winter_top_add_to_cart_rs_600_h2",
+            "tag_name": "h2",
+            "inner_text": "Rs. 600",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Rs. 600\n\nWinter Top\n\nAdd to cart",
+            "abs_xpath": "/html[1]/body[1]/section[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/h2[1]",
+            "rel_xpath": "//div[@id='recommended-item-carousel']/div[contains(@class, 'carousel-inner')][1]/div[contains(@class, 'item active')][2]/div[contains(@class, 'col-sm-4')][2]/div[contains(@class, 'product-image-wrapper')]/div[contains(@class, 'single-products')]/div[contains(@class, 'productinfo text-center')]/h2[1]",
+            "css_path": "div#recommended-item-carousel > div.carousel-inner > div.item active:nth-of-type(2) > div.col-sm-4:nth-of-type(2) > div.product-image-wrapper > div.single-products > div.productinfo text-center > h2",
+            "bounding_box": {
+                "x": 707.484375,
+                "y": 7878.9375,
+                "width": 247.484375,
+                "height": 26.390625
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 9,
+            "page_order": 10,
+            "semantic_name": "rs_400_summer_white_top_add_to_cart_rs_400_h2",
+            "tag_name": "h2",
+            "inner_text": "Rs. 400",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Rs. 400\n\nSummer White Top\n\nAdd to cart",
+            "abs_xpath": "/html[1]/body[1]/section[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/h2[1]",
+            "rel_xpath": "//div[@id='recommended-item-carousel']/div[contains(@class, 'carousel-inner')][1]/div[contains(@class, 'item active')][2]/div[contains(@class, 'col-sm-4')][3]/div[contains(@class, 'product-image-wrapper')]/div[contains(@class, 'single-products')]/div[contains(@class, 'productinfo text-center')]/h2[1]",
+            "css_path": "div#recommended-item-carousel > div.carousel-inner > div.item active:nth-of-type(2) > div.col-sm-4:nth-of-type(3) > div.product-image-wrapper > div.single-products > div.productinfo text-center > h2",
+            "bounding_box": {
+                "x": 994.96875,
+                "y": 7878.9375,
+                "width": 247.484375,
+                "height": 26.390625
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 10,
+            "page_order": 11,
+            "semantic_name": "rs_1500_add_to_cart",
+            "tag_name": "a",
+            "inner_text": "Add to cart",
+            "attributes": {
+                "id": "",
+                "class": "btn btn-default add-to-cart",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Rs. 1500",
+            "abs_xpath": "/html[1]/body[1]/section[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "rel_xpath": "//div[@id='recommended-item-carousel']/div[contains(@class, 'carousel-inner')][1]/div[contains(@class, 'item active')][2]/div[contains(@class, 'col-sm-4')][1]/div[contains(@class, 'product-image-wrapper')]/div[contains(@class, 'single-products')]/div[contains(@class, 'productinfo text-center')]/a[contains(@class, 'btn btn-default add-to-cart')]",
+            "css_path": "div#recommended-item-carousel > div.carousel-inner > div.item active:nth-of-type(2) > div.col-sm-4 > div.product-image-wrapper > div.single-products > div.productinfo text-center > a.btn btn-default add-to-cart",
+            "bounding_box": {
+                "x": 486,
+                "y": 7957.328125,
+                "width": 115.484375,
+                "height": 33.421875
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 11,
+            "page_order": 12,
+            "semantic_name": "rs_600_add_to_cart",
+            "tag_name": "a",
+            "inner_text": "Add to cart",
+            "attributes": {
+                "id": "",
+                "class": "btn btn-default add-to-cart",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Rs. 600",
+            "abs_xpath": "/html[1]/body[1]/section[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/a[1]",
+            "rel_xpath": "//div[@id='recommended-item-carousel']/div[contains(@class, 'carousel-inner')][1]/div[contains(@class, 'item active')][2]/div[contains(@class, 'col-sm-4')][2]/div[contains(@class, 'product-image-wrapper')]/div[contains(@class, 'single-products')]/div[contains(@class, 'productinfo text-center')]/a[contains(@class, 'btn btn-default add-to-cart')]",
+            "css_path": "div#recommended-item-carousel > div.carousel-inner > div.item active:nth-of-type(2) > div.col-sm-4:nth-of-type(2) > div.product-image-wrapper > div.single-products > div.productinfo text-center > a.btn btn-default add-to-cart",
+            "bounding_box": {
+                "x": 773.484375,
+                "y": 7957.328125,
+                "width": 115.484375,
+                "height": 33.421875
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 12,
+            "page_order": 13,
+            "semantic_name": "rs_400_add_to_cart",
+            "tag_name": "a",
+            "inner_text": "Add to cart",
+            "attributes": {
+                "id": "",
+                "class": "btn btn-default add-to-cart",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Rs. 400",
+            "abs_xpath": "/html[1]/body[1]/section[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/a[1]",
+            "rel_xpath": "//div[@id='recommended-item-carousel']/div[contains(@class, 'carousel-inner')][1]/div[contains(@class, 'item active')][2]/div[contains(@class, 'col-sm-4')][3]/div[contains(@class, 'product-image-wrapper')]/div[contains(@class, 'single-products')]/div[contains(@class, 'productinfo text-center')]/a[contains(@class, 'btn btn-default add-to-cart')]",
+            "css_path": "div#recommended-item-carousel > div.carousel-inner > div.item active:nth-of-type(2) > div.col-sm-4:nth-of-type(3) > div.product-image-wrapper > div.single-products > div.productinfo text-center > a.btn btn-default add-to-cart",
+            "bounding_box": {
+                "x": 1060.96875,
+                "y": 7957.328125,
+                "width": 115.484375,
+                "height": 33.421875
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 13,
+            "page_order": 14,
+            "semantic_name": "advertisement_iframe",
+            "tag_name": "iframe",
+            "inner_text": "",
+            "attributes": {
+                "id": "aswift_2",
+                "class": "",
+                "name": "aswift_2",
+                "aria-label": "Advertisement",
+                "alt": "",
+                "title": "Advertisement",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/div[1]/ins[1]/div[1]/iframe[1]",
+            "rel_xpath": "//iframe[@id='aswift_2']",
+            "css_path": "iframe#aswift_2",
+            "bounding_box": {
+                "x": 77.5,
+                "y": 8060.75,
+                "width": 1200,
+                "height": 280
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 14,
+            "page_order": 15,
+            "semantic_name": "scrollup_a",
+            "tag_name": "a",
+            "inner_text": "",
+            "attributes": {
+                "id": "scrollUp",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/a[1]",
+            "rel_xpath": "//a[@id='scrollUp']",
+            "css_path": "a#scrollUp",
+            "bounding_box": {
+                "x": 1305.703125,
+                "y": 8098.927734375,
+                "width": 39.296875,
+                "height": 40
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 15,
+            "page_order": 16,
+            "semantic_name": "subscription_h2",
+            "tag_name": "h2",
+            "inner_text": "SUBSCRIPTION",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/h2[1]",
+            "rel_xpath": "//footer[@id='footer']/div[contains(@class, 'footer-widget')][1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-3 col-sm-offset-1')][2]/div[contains(@class, 'single-widget')]/h2[1]",
+            "css_path": "footer#footer > div.footer-widget > div.container > div.row > div.col-sm-3 col-sm-offset-1:nth-of-type(2) > div.single-widget > h2",
+            "bounding_box": {
+                "x": 205,
+                "y": 8386.75,
+                "width": 262.5,
+                "height": 17.59375
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 16,
+            "page_order": 17,
+            "semantic_name": "subscription_susbscribe_email_input",
+            "tag_name": "input",
+            "inner_text": "",
+            "attributes": {
+                "id": "susbscribe_email",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "SUBSCRIPTION",
+            "abs_xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/input[2]",
+            "rel_xpath": "//input[@id='susbscribe_email']",
+            "css_path": "input#susbscribe_email",
+            "bounding_box": {
+                "x": 205,
+                "y": 8426.34375,
+                "width": 212,
+                "height": 36
+            },
+            "screenshot_path": ""
+        },
+        {
+            "element_index": 17,
+            "page_order": 18,
+            "semantic_name": "subscription_subscribe_button",
+            "tag_name": "button",
+            "inner_text": "",
+            "attributes": {
+                "id": "subscribe",
+                "class": "btn btn-default",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "SUBSCRIPTION",
+            "abs_xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/button[1]",
+            "rel_xpath": "//button[@id='subscribe']",
+            "css_path": "button#subscribe",
+            "bounding_box": {
+                "x": 415.890625,
+                "y": 8426.21875,
+                "width": 51.15625,
+                "height": 36
+            },
+            "screenshot_path": ""
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "page_number": 1,
+        "title": "Automation Exercise",
+        "url": "https://automationexercise.com/",
+        "reason": "initial navigation",
+        "folder": "output\\execution_run_20260603_145537\\pages\\01_automation_exercise",
+        "json": "output\\execution_run_20260603_145537\\pages\\01_automation_exercise\\dom_observation.json"
+    },
+    {
+        "page_number": 2,
+        "title": "Automation Exercise",
+        "url": "https://automationexercise.com/",
+        "reason": "before action",
+        "folder": "output\\execution_run_20260603_145537\\pages\\02_automation_exercise",
+        "json": "output\\execution_run_20260603_145537\\pages\\02_automation_exercise\\dom_observation.json"
+    }
+]

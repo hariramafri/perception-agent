@@ -1,0 +1,90 @@
+[
+    {
+        "timestamp": "2026-06-03T15:48:19",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Instruction requires browser execution.",
+        "url": "data:,"
+    },
+    {
+        "timestamp": "2026-06-03T15:48:31",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: initial navigation",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T15:48:34",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: Automation Exercise",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T15:48:34",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Resolve target for action: click on add to cart for blue top first",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T15:48:34",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Resolved 'add to cart for blue top first' to rs_500_blue_top_add_to_cart_a with score 85",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T15:48:36",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: after action",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T15:48:39",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: Automation Exercise",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T15:48:39",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Resolve target for action: click on view cart from the add to cart pop up",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T15:48:39",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Resolved 'view cart from the add to cart pop up' to rs_500_add_to_cart with score 62",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T15:48:40",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: after action",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T15:48:44",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: Automation Exercise",
+        "url": "https://automationexercise.com/"
+    }
+]

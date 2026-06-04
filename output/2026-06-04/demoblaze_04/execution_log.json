@@ -1,0 +1,89 @@
+[
+    {
+        "timestamp": "2026-06-04T12:53:43",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Instruction requires browser execution.",
+        "url": "data:,"
+    },
+    {
+        "timestamp": "2026-06-04T12:53:48",
+        "status": "ok",
+        "message": "Opened starting URL: https://www.demoblaze.com/",
+        "action": {
+            "action": "open",
+            "target": "https://www.demoblaze.com"
+        },
+        "matched_element": "",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:53:48",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: initial navigation",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:53:50",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: STORE",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:53:50",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: before action",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:53:51",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: STORE",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:53:51",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Resolve target for action: click xyz123_nonexistent",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:53:51",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: confusion: could not resolve xyz123_nonexistent",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:53:52",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: STORE",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:53:52",
+        "status": "needs_perception_guidance",
+        "message": "Could not confidently resolve target 'xyz123_nonexistent'. Top candidates: [(0, 'samsung_galaxy_s6_a'), (0, 'nokia_lumia_1520_a'), (0, 'nexus_6_a'), (0, 'samsung_galaxy_s7_a'), (0, 'iphone_6_32gb_a')]",
+        "action": {
+            "action": "click",
+            "target": "xyz123_nonexistent",
+            "raw": "click xyz123_nonexistent"
+        },
+        "matched_element": "",
+        "url": "https://www.demoblaze.com/"
+    }
+]

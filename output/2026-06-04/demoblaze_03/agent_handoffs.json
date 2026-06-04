@@ -1,0 +1,58 @@
+[
+    {
+        "timestamp": "2026-06-04T12:52:39",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Instruction requires browser execution.",
+        "url": "data:,"
+    },
+    {
+        "timestamp": "2026-06-04T12:52:44",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: initial navigation",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:52:45",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: STORE",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:52:46",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Resolve target for action: click xyz123_nonexistent",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:52:46",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Resolved 'xyz123_nonexistent' to samsung_galaxy_s6_a with score 25",
+        "url": "https://www.demoblaze.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:52:47",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: after action",
+        "url": "https://www.demoblaze.com/prod.html?idp_=1"
+    },
+    {
+        "timestamp": "2026-06-04T12:52:48",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: STORE",
+        "url": "https://www.demoblaze.com/prod.html?idp_=1"
+    }
+]

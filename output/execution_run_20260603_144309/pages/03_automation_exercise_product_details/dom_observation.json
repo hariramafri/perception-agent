@@ -1,0 +1,1045 @@
+{
+    "url": "https://automationexercise.com/product_details/1",
+    "title": "Automation Exercise - Product Details",
+    "capture_reason": "confusion: action failed for view cart",
+    "full_page_screenshot": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\full_page.png",
+    "total_interactive_elements": 37,
+    "elements": [
+        {
+            "element_index": 0,
+            "page_order": 1,
+            "semantic_name": "home_a",
+            "tag_name": "a",
+            "inner_text": "Home",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+            "rel_xpath": "//header[@id='header']/div[contains(@class, 'header-middle')]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-8')][2]/div[contains(@class, 'shop-menu pull-right')]/ul[contains(@class, 'nav navbar-nav')]/li[1]/a",
+            "css_path": "header#header > div.header-middle > div.container > div.row > div.col-sm-8:nth-of-type(2) > div.shop-menu pull-right > ul.nav navbar-nav > li > a",
+            "bounding_box": {
+                "x": 517.5,
+                "y": 30,
+                "width": 57.234375,
+                "height": 20
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0001_home_a.png"
+        },
+        {
+            "element_index": 1,
+            "page_order": 2,
+            "semantic_name": "products_a",
+            "tag_name": "a",
+            "inner_text": "\ue8f8 Products",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/a[1]",
+            "rel_xpath": "//header[@id='header']/div[contains(@class, 'header-middle')]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-8')][2]/div[contains(@class, 'shop-menu pull-right')]/ul[contains(@class, 'nav navbar-nav')]/li[2]/a",
+            "css_path": "header#header > div.header-middle > div.container > div.row > div.col-sm-8:nth-of-type(2) > div.shop-menu pull-right > ul.nav navbar-nav > li:nth-of-type(2) > a",
+            "bounding_box": {
+                "x": 604.734375,
+                "y": 30,
+                "width": 78.140625,
+                "height": 21
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0002_products_a.png"
+        },
+        {
+            "element_index": 2,
+            "page_order": 3,
+            "semantic_name": "cart",
+            "tag_name": "a",
+            "inner_text": "Cart",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[3]/a[1]",
+            "rel_xpath": "//header[@id='header']/div[contains(@class, 'header-middle')]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-8')][2]/div[contains(@class, 'shop-menu pull-right')]/ul[contains(@class, 'nav navbar-nav')]/li[3]/a",
+            "css_path": "header#header > div.header-middle > div.container > div.row > div.col-sm-8:nth-of-type(2) > div.shop-menu pull-right > ul.nav navbar-nav > li:nth-of-type(3) > a",
+            "bounding_box": {
+                "x": 712.875,
+                "y": 30,
+                "width": 46.34375,
+                "height": 20
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0003_cart.png"
+        },
+        {
+            "element_index": 3,
+            "page_order": 4,
+            "semantic_name": "signup_login_a",
+            "tag_name": "a",
+            "inner_text": "Signup / Login",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[4]/a[1]",
+            "rel_xpath": "//header[@id='header']/div[contains(@class, 'header-middle')]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-8')][2]/div[contains(@class, 'shop-menu pull-right')]/ul[contains(@class, 'nav navbar-nav')]/li[4]/a",
+            "css_path": "header#header > div.header-middle > div.container > div.row > div.col-sm-8:nth-of-type(2) > div.shop-menu pull-right > ul.nav navbar-nav > li:nth-of-type(4) > a",
+            "bounding_box": {
+                "x": 789.21875,
+                "y": 30,
+                "width": 105.40625,
+                "height": 20
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0004_signup_login_a.png"
+        },
+        {
+            "element_index": 4,
+            "page_order": 5,
+            "semantic_name": "test_cases",
+            "tag_name": "a",
+            "inner_text": "Test Cases",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[5]/a[1]",
+            "rel_xpath": "//header[@id='header']/div[contains(@class, 'header-middle')]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-8')][2]/div[contains(@class, 'shop-menu pull-right')]/ul[contains(@class, 'nav navbar-nav')]/li[5]/a",
+            "css_path": "header#header > div.header-middle > div.container > div.row > div.col-sm-8:nth-of-type(2) > div.shop-menu pull-right > ul.nav navbar-nav > li:nth-of-type(5) > a",
+            "bounding_box": {
+                "x": 924.625,
+                "y": 30,
+                "width": 89.890625,
+                "height": 20
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0005_test_cases.png"
+        },
+        {
+            "element_index": 5,
+            "page_order": 6,
+            "semantic_name": "api_testing",
+            "tag_name": "a",
+            "inner_text": "API Testing",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[6]/a[1]",
+            "rel_xpath": "//header[@id='header']/div[contains(@class, 'header-middle')]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-8')][2]/div[contains(@class, 'shop-menu pull-right')]/ul[contains(@class, 'nav navbar-nav')]/li[6]/a",
+            "css_path": "header#header > div.header-middle > div.container > div.row > div.col-sm-8:nth-of-type(2) > div.shop-menu pull-right > ul.nav navbar-nav > li:nth-of-type(6) > a",
+            "bounding_box": {
+                "x": 1044.515625,
+                "y": 30,
+                "width": 90.6875,
+                "height": 20
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0006_api_testing.png"
+        },
+        {
+            "element_index": 6,
+            "page_order": 7,
+            "semantic_name": "website_for_automation_practice",
+            "tag_name": "a",
+            "inner_text": "",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "rel_xpath": "//header[@id='header']/div[contains(@class, 'header-middle')]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-4')][1]/div[contains(@class, 'logo pull-left')]/a",
+            "css_path": "header#header > div.header-middle > div.container > div.row > div.col-sm-4 > div.logo pull-left > a",
+            "bounding_box": {
+                "x": 107.5,
+                "y": 56.625,
+                "width": 263,
+                "height": 16
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0007_website_for_automation_practice.png"
+        },
+        {
+            "element_index": 7,
+            "page_order": 8,
+            "semantic_name": "video_tutorials",
+            "tag_name": "a",
+            "inner_text": "Video Tutorials",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[7]/a[1]",
+            "rel_xpath": "//header[@id='header']/div[contains(@class, 'header-middle')]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-8')][2]/div[contains(@class, 'shop-menu pull-right')]/ul[contains(@class, 'nav navbar-nav')]/li[7]/a",
+            "css_path": "header#header > div.header-middle > div.container > div.row > div.col-sm-8:nth-of-type(2) > div.shop-menu pull-right > ul.nav navbar-nav > li:nth-of-type(7) > a",
+            "bounding_box": {
+                "x": 712.875,
+                "y": 60,
+                "width": 113.25,
+                "height": 20
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0008_video_tutorials.png"
+        },
+        {
+            "element_index": 8,
+            "page_order": 9,
+            "semantic_name": "contact_us",
+            "tag_name": "a",
+            "inner_text": "Contact us",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[8]/a[1]",
+            "rel_xpath": "//header[@id='header']/div[contains(@class, 'header-middle')]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-8')][2]/div[contains(@class, 'shop-menu pull-right')]/ul[contains(@class, 'nav navbar-nav')]/li[8]/a",
+            "css_path": "header#header > div.header-middle > div.container > div.row > div.col-sm-8:nth-of-type(2) > div.shop-menu pull-right > ul.nav navbar-nav > li:nth-of-type(8) > a",
+            "bounding_box": {
+                "x": 856.125,
+                "y": 60,
+                "width": 87.828125,
+                "height": 20
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0009_contact_us.png"
+        },
+        {
+            "element_index": 9,
+            "page_order": 10,
+            "semantic_name": "category_h2",
+            "tag_name": "h2",
+            "inner_text": "CATEGORY",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/h2[1]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-3')][1]/div[contains(@class, 'left-sidebar')][1]/h2[1]",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-3 > div.left-sidebar > h2",
+            "bounding_box": {
+                "x": 107.5,
+                "y": 133,
+                "width": 262.5,
+                "height": 19.796875
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0010_category_h2.png"
+        },
+        {
+            "element_index": 10,
+            "page_order": 11,
+            "semantic_name": "ecommerce_website_products_img",
+            "tag_name": "img",
+            "inner_text": "",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "ecommerce website products",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Added!",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/img[1]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-9 padding-right')][2]/div[contains(@class, 'product-details')][2]/div[contains(@class, 'col-sm-5')][1]/div[contains(@class, 'view-product')]/img",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-9 padding-right:nth-of-type(2) > div.product-details:nth-of-type(2) > div.col-sm-5 > div.view-product > img",
+            "bounding_box": {
+                "x": 415,
+                "y": 143,
+                "width": 329.375,
+                "height": 380
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0011_ecommerce_website_products_img.png"
+        },
+        {
+            "element_index": 11,
+            "page_order": 12,
+            "semantic_name": "ecommerce_website_products_img_order_11",
+            "tag_name": "img",
+            "inner_text": "",
+            "attributes": {
+                "id": "",
+                "class": "newarrival",
+                "name": "",
+                "aria-label": "",
+                "alt": "ecommerce website products",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Blue Top",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/img[1]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-9 padding-right')][2]/div[contains(@class, 'product-details')][2]/div[contains(@class, 'col-sm-7')][2]/div[contains(@class, 'product-information')]/img[contains(@class, 'newarrival')][1]",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-9 padding-right:nth-of-type(2) > div.product-details:nth-of-type(2) > div.col-sm-7:nth-of-type(2) > div.product-information > img.newarrival",
+            "bounding_box": {
+                "x": 775.375,
+                "y": 144,
+                "width": 44,
+                "height": 22
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0012_ecommerce_website_products_img_order_11.png"
+        },
+        {
+            "element_index": 12,
+            "page_order": 13,
+            "semantic_name": "women_a",
+            "tag_name": "a",
+            "inner_text": "WOMEN",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "WOMEN",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h4[1]/a[1]",
+            "rel_xpath": "//div[@id='accordian']/div[contains(@class, 'panel panel-default')][1]/div[contains(@class, 'panel-heading')][1]/h4[contains(@class, 'panel-title')]/a",
+            "css_path": "div#accordian > div.panel panel-default > div.panel-heading > h4.panel-title > a",
+            "bounding_box": {
+                "x": 128.5,
+                "y": 204.796875,
+                "width": 55.21875,
+                "height": 16
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0013_women_a.png"
+        },
+        {
+            "element_index": 13,
+            "page_order": 14,
+            "semantic_name": "added_blue_top_h2",
+            "tag_name": "h2",
+            "inner_text": "Blue Top",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Added!",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/h2[1]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-9 padding-right')][2]/div[contains(@class, 'product-details')][2]/div[contains(@class, 'col-sm-7')][2]/div[contains(@class, 'product-information')]/h2[1]",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-9 padding-right:nth-of-type(2) > div.product-details:nth-of-type(2) > div.col-sm-7:nth-of-type(2) > div.product-information > h2",
+            "bounding_box": {
+                "x": 835.375,
+                "y": 204,
+                "width": 411.125,
+                "height": 22
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0014_added_blue_top_h2.png"
+        },
+        {
+            "element_index": 14,
+            "page_order": 15,
+            "semantic_name": "men_a",
+            "tag_name": "a",
+            "inner_text": "MEN",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "MEN",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/h4[1]/a[1]",
+            "rel_xpath": "//div[@id='accordian']/div[contains(@class, 'panel panel-default')][2]/div[contains(@class, 'panel-heading')][1]/h4[contains(@class, 'panel-title')]/a",
+            "css_path": "div#accordian > div.panel panel-default:nth-of-type(2) > div.panel-heading > h4.panel-title > a",
+            "bounding_box": {
+                "x": 128.5,
+                "y": 237.390625,
+                "width": 31.125,
+                "height": 16
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0015_men_a.png"
+        },
+        {
+            "element_index": 15,
+            "page_order": 16,
+            "semantic_name": "ecommerce_website_products_img_order_15",
+            "tag_name": "img",
+            "inner_text": "",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "ecommerce website products",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Blue Top",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/img[2]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-9 padding-right')][2]/div[contains(@class, 'product-details')][2]/div[contains(@class, 'col-sm-7')][2]/div[contains(@class, 'product-information')]/img[2]",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-9 padding-right:nth-of-type(2) > div.product-details:nth-of-type(2) > div.col-sm-7:nth-of-type(2) > div.product-information > img:nth-of-type(2)",
+            "bounding_box": {
+                "x": 835.375,
+                "y": 266.375,
+                "width": 80,
+                "height": 12
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0016_ecommerce_website_products_img_order_15.png"
+        },
+        {
+            "element_index": 16,
+            "page_order": 17,
+            "semantic_name": "kids_a",
+            "tag_name": "a",
+            "inner_text": "KIDS",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "KIDS",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/h4[1]/a[1]",
+            "rel_xpath": "//div[@id='accordian']/div[contains(@class, 'panel panel-default')][3]/div[contains(@class, 'panel-heading')][1]/h4[contains(@class, 'panel-title')]/a",
+            "css_path": "div#accordian > div.panel panel-default:nth-of-type(3) > div.panel-heading > h4.panel-title > a",
+            "bounding_box": {
+                "x": 128.5,
+                "y": 269.984375,
+                "width": 32.6875,
+                "height": 16
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0017_kids_a.png"
+        },
+        {
+            "element_index": 17,
+            "page_order": 18,
+            "semantic_name": "blue_top_add_to_cart_button",
+            "tag_name": "button",
+            "inner_text": "Add to cart",
+            "attributes": {
+                "id": "",
+                "class": "btn btn-default cart",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Blue Top",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/span[1]/button[1]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-9 padding-right')][2]/div[contains(@class, 'product-details')][2]/div[contains(@class, 'col-sm-7')][2]/div[contains(@class, 'product-information')]/span[1]/button[contains(@class, 'btn btn-default cart')]",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-9 padding-right:nth-of-type(2) > div.product-details:nth-of-type(2) > div.col-sm-7:nth-of-type(2) > div.product-information > span > button.btn btn-default cart",
+            "bounding_box": {
+                "x": 1104.6875,
+                "y": 299,
+                "width": 113.828125,
+                "height": 33.421875
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0018_blue_top_add_to_cart_button.png"
+        },
+        {
+            "element_index": 18,
+            "page_order": 19,
+            "semantic_name": "blue_top_quantity_input",
+            "tag_name": "input",
+            "inner_text": "",
+            "attributes": {
+                "id": "quantity",
+                "class": "",
+                "name": "quantity",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Blue Top",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/span[1]/input[1]",
+            "rel_xpath": "//input[@id='quantity']",
+            "css_path": "input#quantity",
+            "bounding_box": {
+                "x": 1030.796875,
+                "y": 301.34375,
+                "width": 50,
+                "height": 33
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0019_blue_top_quantity_input.png"
+        },
+        {
+            "element_index": 19,
+            "page_order": 20,
+            "semantic_name": "blue_top_quantity_label",
+            "tag_name": "label",
+            "inner_text": "Quantity:",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Blue Top",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/span[1]/label[1]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-9 padding-right')][2]/div[contains(@class, 'product-details')][2]/div[contains(@class, 'col-sm-7')][2]/div[contains(@class, 'product-information')]/span[1]/label[1]",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-9 padding-right:nth-of-type(2) > div.product-details:nth-of-type(2) > div.col-sm-7:nth-of-type(2) > div.product-information > span > label",
+            "bounding_box": {
+                "x": 960.453125,
+                "y": 309.34375,
+                "width": 61.453125,
+                "height": 20
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0020_blue_top_quantity_label.png"
+        },
+        {
+            "element_index": 20,
+            "page_order": 21,
+            "semantic_name": "category_brands_h2",
+            "tag_name": "h2",
+            "inner_text": "BRANDS",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "CATEGORY",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/h2[1]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-3')][1]/div[contains(@class, 'left-sidebar')][1]/div[contains(@class, 'brands_products')][2]/h2[1]",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-3 > div.left-sidebar > div.brands_products:nth-of-type(2) > h2",
+            "bounding_box": {
+                "x": 107.5,
+                "y": 347.578125,
+                "width": 262.5,
+                "height": 19.796875
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0021_category_brands_h2.png"
+        },
+        {
+            "element_index": 21,
+            "page_order": 22,
+            "semantic_name": "brands_6_polo",
+            "tag_name": "a",
+            "inner_text": "(6)\nPOLO",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "BRANDS",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-3')][1]/div[contains(@class, 'left-sidebar')][1]/div[contains(@class, 'brands_products')][2]/div[contains(@class, 'brands-name')]/ul[contains(@class, 'nav nav-pills nav-stacked')]/li[1]/a",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-3 > div.left-sidebar > div.brands_products:nth-of-type(2) > div.brands-name > ul.nav nav-pills nav-stacked > li > a",
+            "bounding_box": {
+                "x": 108.5,
+                "y": 413.375,
+                "width": 260.5,
+                "height": 30
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0022_brands_6_polo.png"
+        },
+        {
+            "element_index": 22,
+            "page_order": 23,
+            "semantic_name": "brands_5_h_m",
+            "tag_name": "a",
+            "inner_text": "(5)\nH&M",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "BRANDS",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/a[1]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-3')][1]/div[contains(@class, 'left-sidebar')][1]/div[contains(@class, 'brands_products')][2]/div[contains(@class, 'brands-name')]/ul[contains(@class, 'nav nav-pills nav-stacked')]/li[2]/a",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-3 > div.left-sidebar > div.brands_products:nth-of-type(2) > div.brands-name > ul.nav nav-pills nav-stacked > li:nth-of-type(2) > a",
+            "bounding_box": {
+                "x": 108.5,
+                "y": 445.375,
+                "width": 260.5,
+                "height": 30
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0023_brands_5_h_m.png"
+        },
+        {
+            "element_index": 23,
+            "page_order": 24,
+            "semantic_name": "brands_5_madame",
+            "tag_name": "a",
+            "inner_text": "(5)\nMADAME",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "BRANDS",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[3]/a[1]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-3')][1]/div[contains(@class, 'left-sidebar')][1]/div[contains(@class, 'brands_products')][2]/div[contains(@class, 'brands-name')]/ul[contains(@class, 'nav nav-pills nav-stacked')]/li[3]/a",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-3 > div.left-sidebar > div.brands_products:nth-of-type(2) > div.brands-name > ul.nav nav-pills nav-stacked > li:nth-of-type(3) > a",
+            "bounding_box": {
+                "x": 108.5,
+                "y": 477.375,
+                "width": 260.5,
+                "height": 30
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0024_brands_5_madame.png"
+        },
+        {
+            "element_index": 24,
+            "page_order": 25,
+            "semantic_name": "brands_3_mast_harbour",
+            "tag_name": "a",
+            "inner_text": "(3)\nMAST & HARBOUR",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "BRANDS",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[4]/a[1]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-3')][1]/div[contains(@class, 'left-sidebar')][1]/div[contains(@class, 'brands_products')][2]/div[contains(@class, 'brands-name')]/ul[contains(@class, 'nav nav-pills nav-stacked')]/li[4]/a",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-3 > div.left-sidebar > div.brands_products:nth-of-type(2) > div.brands-name > ul.nav nav-pills nav-stacked > li:nth-of-type(4) > a",
+            "bounding_box": {
+                "x": 108.5,
+                "y": 509.375,
+                "width": 260.5,
+                "height": 30
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0025_brands_3_mast_harbour.png"
+        },
+        {
+            "element_index": 25,
+            "page_order": 26,
+            "semantic_name": "brands_4_babyhug",
+            "tag_name": "a",
+            "inner_text": "(4)\nBABYHUG",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "BRANDS",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[5]/a[1]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-3')][1]/div[contains(@class, 'left-sidebar')][1]/div[contains(@class, 'brands_products')][2]/div[contains(@class, 'brands-name')]/ul[contains(@class, 'nav nav-pills nav-stacked')]/li[5]/a",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-3 > div.left-sidebar > div.brands_products:nth-of-type(2) > div.brands-name > ul.nav nav-pills nav-stacked > li:nth-of-type(5) > a",
+            "bounding_box": {
+                "x": 108.5,
+                "y": 541.375,
+                "width": 260.5,
+                "height": 30
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0026_brands_4_babyhug.png"
+        },
+        {
+            "element_index": 26,
+            "page_order": 27,
+            "semantic_name": "added_write_your_review",
+            "tag_name": "a",
+            "inner_text": "WRITE YOUR REVIEW",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Added!",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[2]/div[3]/div[1]/ul[1]/li[1]/a[1]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-9 padding-right')][2]/div[contains(@class, 'category-tab shop-details-tab')][3]/div[contains(@class, 'col-sm-12')][1]/ul[contains(@class, 'nav nav-tabs')]/li[contains(@class, 'active')]/a",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-9 padding-right:nth-of-type(2) > div.category-tab shop-details-tab:nth-of-type(3) > div.col-sm-12 > ul.nav nav-tabs > li.active > a",
+            "bounding_box": {
+                "x": 416,
+                "y": 564,
+                "width": 178.3125,
+                "height": 39.984375
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0027_added_write_your_review.png"
+        },
+        {
+            "element_index": 27,
+            "page_order": 28,
+            "semantic_name": "brands_3_allen_solly_junior",
+            "tag_name": "a",
+            "inner_text": "(3)\nALLEN SOLLY JUNIOR",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "BRANDS",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[6]/a[1]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-3')][1]/div[contains(@class, 'left-sidebar')][1]/div[contains(@class, 'brands_products')][2]/div[contains(@class, 'brands-name')]/ul[contains(@class, 'nav nav-pills nav-stacked')]/li[6]/a",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-3 > div.left-sidebar > div.brands_products:nth-of-type(2) > div.brands-name > ul.nav nav-pills nav-stacked > li:nth-of-type(6) > a",
+            "bounding_box": {
+                "x": 108.5,
+                "y": 573.375,
+                "width": 260.5,
+                "height": 30
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0028_brands_3_allen_solly_junior.png"
+        },
+        {
+            "element_index": 28,
+            "page_order": 29,
+            "semantic_name": "brands_3_kookie_kids",
+            "tag_name": "a",
+            "inner_text": "(3)\nKOOKIE KIDS",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "BRANDS",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[7]/a[1]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-3')][1]/div[contains(@class, 'left-sidebar')][1]/div[contains(@class, 'brands_products')][2]/div[contains(@class, 'brands-name')]/ul[contains(@class, 'nav nav-pills nav-stacked')]/li[7]/a",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-3 > div.left-sidebar > div.brands_products:nth-of-type(2) > div.brands-name > ul.nav nav-pills nav-stacked > li:nth-of-type(7) > a",
+            "bounding_box": {
+                "x": 108.5,
+                "y": 605.375,
+                "width": 260.5,
+                "height": 30
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0029_brands_3_kookie_kids.png"
+        },
+        {
+            "element_index": 29,
+            "page_order": 30,
+            "semantic_name": "submit_name_input",
+            "tag_name": "input",
+            "inner_text": "",
+            "attributes": {
+                "id": "name",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Submit",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/form[1]/span[1]/input[1]",
+            "rel_xpath": "//input[@id='name']",
+            "css_path": "input#name",
+            "bounding_box": {
+                "x": 441,
+                "y": 633.984375,
+                "width": 374.625,
+                "height": 36
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0030_submit_name_input.png"
+        },
+        {
+            "element_index": 30,
+            "page_order": 31,
+            "semantic_name": "submit_email_input",
+            "tag_name": "input",
+            "inner_text": "",
+            "attributes": {
+                "id": "email",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Submit",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/form[1]/span[1]/input[2]",
+            "rel_xpath": "//input[@id='email']",
+            "css_path": "input#email",
+            "bounding_box": {
+                "x": 842.921875,
+                "y": 633.984375,
+                "width": 374.625,
+                "height": 36
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0031_submit_email_input.png"
+        },
+        {
+            "element_index": 31,
+            "page_order": 32,
+            "semantic_name": "brands_5_biba",
+            "tag_name": "a",
+            "inner_text": "(5)\nBIBA",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "BRANDS",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[8]/a[1]",
+            "rel_xpath": "//body[1]/section[1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-3')][1]/div[contains(@class, 'left-sidebar')][1]/div[contains(@class, 'brands_products')][2]/div[contains(@class, 'brands-name')]/ul[contains(@class, 'nav nav-pills nav-stacked')]/li[8]/a",
+            "css_path": "html > body > section > div.container > div.row > div.col-sm-3 > div.left-sidebar > div.brands_products:nth-of-type(2) > div.brands-name > ul.nav nav-pills nav-stacked > li:nth-of-type(8) > a",
+            "bounding_box": {
+                "x": 108.5,
+                "y": 637.375,
+                "width": 260.5,
+                "height": 30
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0032_brands_5_biba.png"
+        },
+        {
+            "element_index": 32,
+            "page_order": 33,
+            "semantic_name": "submit_review_textarea",
+            "tag_name": "textarea",
+            "inner_text": "",
+            "attributes": {
+                "id": "review",
+                "class": "",
+                "name": "review",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Submit",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/form[1]/textarea[1]",
+            "rel_xpath": "//textarea[@id='review']",
+            "css_path": "textarea#review",
+            "bounding_box": {
+                "x": 441,
+                "y": 684.984375,
+                "width": 776.59375,
+                "height": 195
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0033_submit_review_textarea.png"
+        },
+        {
+            "element_index": 33,
+            "page_order": 34,
+            "semantic_name": "submit_button",
+            "tag_name": "button",
+            "inner_text": "Submit",
+            "attributes": {
+                "id": "button-review",
+                "class": "btn btn-default pull-right",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/form[1]/button[1]",
+            "rel_xpath": "//button[@id='button-review']",
+            "css_path": "button#button-review",
+            "bounding_box": {
+                "x": 1153.921875,
+                "y": 904.984375,
+                "width": 67.578125,
+                "height": 32
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0034_submit_button.png"
+        },
+        {
+            "element_index": 34,
+            "page_order": 35,
+            "semantic_name": "subscription_h2",
+            "tag_name": "h2",
+            "inner_text": "SUBSCRIPTION",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/h2[1]",
+            "rel_xpath": "//footer[@id='footer']/div[contains(@class, 'footer-widget')][1]/div[contains(@class, 'container')]/div[contains(@class, 'row')]/div[contains(@class, 'col-sm-3 col-sm-offset-1')][2]/div[contains(@class, 'single-widget')]/h2[1]",
+            "css_path": "footer#footer > div.footer-widget > div.container > div.row > div.col-sm-3 col-sm-offset-1:nth-of-type(2) > div.single-widget > h2",
+            "bounding_box": {
+                "x": 205,
+                "y": 1078.984375,
+                "width": 262.5,
+                "height": 17.59375
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0035_subscription_h2.png"
+        },
+        {
+            "element_index": 35,
+            "page_order": 36,
+            "semantic_name": "subscription_susbscribe_email_input",
+            "tag_name": "input",
+            "inner_text": "",
+            "attributes": {
+                "id": "susbscribe_email",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "SUBSCRIPTION",
+            "abs_xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/input[2]",
+            "rel_xpath": "//input[@id='susbscribe_email']",
+            "css_path": "input#susbscribe_email",
+            "bounding_box": {
+                "x": 205,
+                "y": 1118.578125,
+                "width": 212,
+                "height": 36
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0036_subscription_susbscribe_email_input.png"
+        },
+        {
+            "element_index": 36,
+            "page_order": 37,
+            "semantic_name": "subscription_subscribe_button",
+            "tag_name": "button",
+            "inner_text": "",
+            "attributes": {
+                "id": "subscribe",
+                "class": "btn btn-default",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "SUBSCRIPTION",
+            "abs_xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/button[1]",
+            "rel_xpath": "//button[@id='subscribe']",
+            "css_path": "button#subscribe",
+            "bounding_box": {
+                "x": 415.890625,
+                "y": 1118.453125,
+                "width": 51.15625,
+                "height": 36
+            },
+            "screenshot_path": "output\\execution_run_20260603_144309\\pages\\03_automation_exercise_product_details\\0037_subscription_subscribe_button.png"
+        }
+    ]
+}

@@ -4,6 +4,9 @@ import json
 import time
 import argparse
 import re
+import base64
+from datetime import datetime
+from urllib.parse import urlparse
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -143,6 +146,51 @@ def dedupe_overlapping_elements(elements_data):
         kept,
         key=lambda item: (round(float(item.get("y", 0)) / 8) * 8, float(item.get("x", 0)))
     )
+
+
+def capture_full_page_screenshot(driver, path, telemetry):
+    try:
+        width = driver.execute_script(
+            "return Math.max(document.body.scrollWidth, document.documentElement.scrollWidth, document.body.offsetWidth, document.documentElement.offsetWidth, document.documentElement.clientWidth);"
+        )
+        height = driver.execute_script(
+            "return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.documentElement.clientHeight);"
+        )
+        device_pixel_ratio = driver.execute_script("return window.devicePixelRatio || 1;")
+
+        if width < 1 or height < 1:
+            raise ValueError(f"Invalid full page dimensions: {width}x{height}")
+
+        driver.execute_cdp_cmd("Emulation.setDeviceMetricsOverride", {
+            "width": int(width),
+            "height": int(height),
+            "deviceScaleFactor": float(device_pixel_ratio),
+            "mobile": False,
+            "screenOrientation": {"angle": 0, "type": "portraitPrimary"}
+        })
+
+        screenshot = driver.execute_cdp_cmd("Page.captureScreenshot", {
+            "fromSurface": True,
+            "captureBeyondViewport": True
+        })
+        driver.execute_cdp_cmd("Emulation.clearDeviceMetricsOverride", {})
+
+        with open(path, "wb") as f:
+            f.write(base64.b64decode(screenshot["data"]))
+        telemetry.log("INFO", f"Captured full page screenshot {width}x{height}.")
+        return True
+    except Exception as exc:
+        telemetry.log("WARN", f"Full page screenshot via CDP failed: {exc}. Falling back to viewport screenshot.")
+        try:
+            result = driver.save_screenshot(path)
+            if result:
+                telemetry.log("INFO", "Fallback viewport screenshot saved.")
+                return True
+            telemetry.log("WARN", "Fallback screenshot returned false.")
+        except Exception as fallback_exc:
+            telemetry.log("ERROR", f"Fallback screenshot failed: {fallback_exc}")
+        return False
+
 
 # --- 3. EXTRACTION MODULE ---
 def extract_visible_elements(driver, output_dir, telemetry, full_screenshot_path, offset_index=0):
@@ -428,16 +476,6 @@ def extract_visible_elements(driver, output_dir, telemetry, full_screenshot_path
             for idx, data in enumerate(elements_data):
                 try:
                     x, y, w, h = data['x'], data['y'], data['width'], data['height']
-                    
-                    left = max(0, int(x * scale_x) - 2)
-                    top = max(0, int(y * scale_y) - 2)
-                    right = min(full_image.width, int((x + w) * scale_x) + 2)
-                    bottom = min(full_image.height, int((y + h) * scale_y) + 2)
-
-                    if right <= left or bottom <= top:
-                        telemetry.log("WARN", f"Skipping invalid crop bounds for element {idx}: {(left, top, right, bottom)}")
-                        continue
-                    
                     tag_name = data["tagName"]
                     inner_text = data["innerText"]
                     aria_label = data["ariaLabel"]
@@ -462,11 +500,22 @@ def extract_visible_elements(driver, output_dir, telemetry, full_screenshot_path
                     
                     page_order = offset_index + idx + 1
                     element_img_path = os.path.join(output_dir, f"{page_order:04d}_{semantic_name}.png")
-                    cropped = full_image.crop((left, top, right, bottom))
-                    if cropped.getbbox() is None:
-                        telemetry.log("WARN", f"Skipping empty crop for element {idx}: {semantic_name}")
-                        continue
-                    cropped.save(element_img_path)
+                    screenshot_path = ""
+                    
+                    left = max(0, int(x * scale_x) - 2)
+                    top = max(0, int(y * scale_y) - 2)
+                    right = min(full_image.width, int((x + w) * scale_x) + 2)
+                    bottom = min(full_image.height, int((y + h) * scale_y) + 2)
+
+                    if right <= left or bottom <= top:
+                        telemetry.log("WARN", f"Skipping invalid crop bounds for element {idx}: {(left, top, right, bottom)}")
+                    else:
+                        cropped = full_image.crop((left, top, right, bottom))
+                        if cropped.getbbox() is None:
+                            telemetry.log("WARN", f"Skipping empty crop for element {idx}: {semantic_name}")
+                        else:
+                            cropped.save(element_img_path)
+                            screenshot_path = element_img_path
                     
                     observations.append({
                         "element_index": idx,
@@ -494,7 +543,7 @@ def extract_visible_elements(driver, output_dir, telemetry, full_screenshot_path
                             "width": w,
                             "height": h
                         },
-                        "screenshot_path": element_img_path
+                        "screenshot_path": screenshot_path
                     })
                 except Exception:
                     continue
@@ -503,7 +552,180 @@ def extract_visible_elements(driver, output_dir, telemetry, full_screenshot_path
                 
     return observations
 
+def dismiss_ad_popups(driver, telemetry):
+    """
+    Detects and dismisses common overlay popups and Google Vignette/interstitial ads.
+    Returns True if an ad or popup was dismissed, False otherwise.
+    """
+    telemetry.log("INFO", "Checking for advertisement pop-ups or overlays...")
+    
+    ad_dismissed = False
+    
+    # 1. Check for native browser alert dialogs first
+    try:
+        alert = driver.switch_to.alert
+        alert.dismiss()
+        telemetry.log("INFO", "Dismissed browser alert popup.")
+        ad_dismissed = True
+    except Exception:
+        pass
+
+    # 2. Check for Google Vignette/Ad iframes
+    if not ad_dismissed:
+        try:
+            iframes = driver.find_elements(By.TAG_NAME, "iframe")
+            for iframe in iframes:
+                try:
+                    iframe_id = iframe.get_attribute("id") or ""
+                    iframe_name = iframe.get_attribute("name") or ""
+                    if any(kw in iframe_id.lower() or kw in iframe_name.lower() for kw in ["aswift", "google", "ad"]):
+                        driver.switch_to.frame(iframe)
+                        
+                        # Check for nested ad_iframe inside
+                        try:
+                            nested_iframe = driver.find_element(By.ID, "ad_iframe")
+                            driver.switch_to.frame(nested_iframe)
+                        except Exception:
+                            # Not nested
+                            pass
+                        
+                        # Look for close/dismiss button
+                        dismiss_btn = None
+                        selectors = [
+                            "#dismiss-button", 
+                            ".dismiss-button", 
+                            "[aria-label*='Close']", 
+                            "[aria-label*='close']",
+                            "div[id='dismiss-button']",
+                            "span[id='dismiss-button']",
+                            "button[id='dismiss-button']"
+                        ]
+                        for sel in selectors:
+                            try:
+                                btn = driver.find_element(By.CSS_SELECTOR, sel)
+                                if btn.is_displayed():
+                                    dismiss_btn = btn
+                                    break
+                            except Exception:
+                                pass
+                                
+                        if not dismiss_btn:
+                            for tag in ["div", "button", "span", "a"]:
+                                try:
+                                    elements = driver.find_elements(By.TAG_NAME, tag)
+                                    for el in elements:
+                                        text = el.text.strip().lower()
+                                        if el.is_displayed() and text in ["close", "dismiss", "skip", "no thanks", "x"]:
+                                            dismiss_btn = el
+                                            break
+                                    if dismiss_btn:
+                                        break
+                                except Exception:
+                                    pass
+                                    
+                        if dismiss_btn:
+                            driver.execute_script("arguments[0].click();", dismiss_btn)
+                            telemetry.log("INFO", "Google Vignette advertisement dismissed.")
+                            ad_dismissed = True
+                            driver.switch_to.default_content()
+                            time.sleep(1.5)  # Let overlay close and page stabilize
+                            break
+                        else:
+                            driver.switch_to.default_content()
+                except Exception:
+                    try:
+                        driver.switch_to.default_content()
+                    except Exception:
+                        pass
+        except Exception as e:
+            telemetry.log("WARN", f"Error scanning for Google Vignette iframes: {e}")
+
+    # 3. Check for HTML modal/overlay ad popups in main context (JS Smasher)
+    if not ad_dismissed:
+        try:
+            js_smasher = """
+            const keywords = ['cancel', 'close', 'dismiss', 'no thanks', 'not now', 'decline', 'accept all', 'accept cookies', 'got it', 'reject all', 'maybe later', 'skip', 'x'];
+            let modals = Array.from(document.querySelectorAll('dialog, [role="dialog"], [role="alertdialog"], .modal, .popup, .overlay, .banner, [id*="modal"], [id*="banner"], [id*="cookie"], [class*="modal"], [class*="popup"], [class*="ad-"], [id*="ad-"]'));
+            for (let modal of modals) {
+                if (modal.offsetWidth > 0 && modal.offsetHeight > 0) {
+                    let btns = Array.from(modal.querySelectorAll('button, a, input, [role="button"]'));
+                    for (let btn of btns) {
+                        let txt = (btn.innerText || btn.value || '').trim().toLowerCase();
+                        let aria = (btn.getAttribute('aria-label') || '').trim().toLowerCase();
+                        if (keywords.includes(txt) || keywords.includes(aria) || txt === 'x' || aria === 'x') {
+                            btn.click();
+                            return true;
+                        }
+                    }
+                }
+            }
+            let btns = Array.from(document.querySelectorAll('button, a, input, [role="button"]'));
+            for (let i = btns.length - 1; i >= 0; i--) {
+                let btn = btns[i];
+                if (btn.offsetWidth > 0 && btn.offsetHeight > 0) {
+                    let style = window.getComputedStyle(btn);
+                    if (style.position === 'fixed' || style.position === 'absolute' || style.zIndex > 100) {
+                        let txt = (btn.innerText || btn.value || '').trim().toLowerCase();
+                        let aria = (btn.getAttribute('aria-label') || '').trim().toLowerCase();
+                        if (keywords.includes(txt) || keywords.includes(aria) || txt === 'x' || aria === 'x') {
+                            btn.click();
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
+            """
+            if driver.execute_script(js_smasher):
+                telemetry.log("INFO", "Dismissed modal/overlay popup dynamically via JS.")
+                ad_dismissed = True
+                time.sleep(1.5)
+        except Exception as e:
+            telemetry.log("WARN", f"Error executing HTML popup JS smasher: {e}")
+
+    if ad_dismissed:
+        try:
+            WebDriverWait(driver, 10).until(
+                lambda d: d.execute_script("return document.readyState") == "complete"
+            )
+        except Exception:
+            pass
+            
+    return ad_dismissed
+
+def is_modal_open(driver):
+    try:
+        js = """
+        if (document.body.classList.contains('modal-open')) return true;
+        const modalSelectors = [
+            '.modal.in', '.modal.show', 
+            '[role="dialog"]', '[role="alertdialog"]', 
+            '.fade.show', '.modal-backdrop',
+            '#cartModal', 
+            '.checkout-modal', '.popup-container', '.overlay-container'
+        ];
+        for (const selector of modalSelectors) {
+            const elements = document.querySelectorAll(selector);
+            for (const el of elements) {
+                if (el.offsetWidth > 0 && el.offsetHeight > 0) {
+                    const style = window.getComputedStyle(el);
+                    if (style.display !== 'none' && style.visibility !== 'hidden' && style.opacity !== '0') {
+                        if (el.tagName !== 'BODY' && el.tagName !== 'HTML') {
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+        """
+        return bool(driver.execute_script(js))
+    except Exception:
+        return False
+
+
 def extract_dom(driver, url, output_dir, telemetry, full_screenshot_path):
+    dismiss_ad_popups(driver, telemetry)
     with telemetry.track_action("DOM Node Count Check"):
         node_count = driver.execute_script("return document.querySelectorAll('*').length;")
         telemetry.log("INFO", f"Total DOM nodes: {node_count}")
@@ -512,7 +734,11 @@ def extract_dom(driver, url, output_dir, telemetry, full_screenshot_path):
     start_time = time.time()
     TIMEOUT = 30.0
 
-    if node_count > 2000:
+    modal_active = is_modal_open(driver)
+    if modal_active:
+        telemetry.log("INFO", "Active modal popup detected. Viewport-only screenshot mode enabled.")
+
+    if not modal_active and node_count > 2000:
         telemetry.log("INFO", "Large DOM detected (>2000 nodes). Performing lazy-load scroll chunks.")
         
         viewport_height = driver.execute_script("return window.innerHeight;")
@@ -532,10 +758,19 @@ def extract_dom(driver, url, output_dir, telemetry, full_screenshot_path):
         time.sleep(1)
 
     with telemetry.track_action("Screenshot Capture (Post-Stabilization Full Page)"):
-        total_height = driver.execute_script("return Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);")
-        driver.set_window_size(1920, total_height + 100)
-        time.sleep(0.5)
-        driver.save_screenshot(full_screenshot_path)
+        if modal_active:
+            try:
+                result = driver.save_screenshot(full_screenshot_path)
+                if result:
+                    telemetry.log("INFO", "Viewport screenshot captured successfully for modal.")
+                else:
+                    telemetry.log("WARN", "Viewport screenshot failed for modal.")
+            except Exception as e:
+                telemetry.log("ERROR", f"Viewport screenshot failed: {e}")
+        else:
+            driver.execute_script("window.scrollTo(0, 0);")
+            time.sleep(0.5)
+            capture_full_page_screenshot(driver, full_screenshot_path, telemetry)
 
     observations = extract_visible_elements(driver, output_dir, telemetry, full_screenshot_path)
         
@@ -579,6 +814,47 @@ def looks_like_plain_url(value):
     value = (value or "").strip()
     return bool(re.fullmatch(r"https?://[^\s]+", value))
 
+def extract_app_name(url):
+    try:
+        parsed = urlparse(url)
+        netloc = parsed.netloc or parsed.path
+        netloc = netloc.split(":")[0]
+        if netloc.startswith("www."):
+            netloc = netloc[4:]
+        parts = netloc.split(".")
+        if parts:
+            app_name = parts[0]
+            if not app_name:
+                app_name = "app"
+            app_name = re.sub(r"[^a-zA-Z0-9]+", "_", app_name.lower())
+            return app_name or "app"
+    except Exception:
+        pass
+    return "app"
+
+def get_next_run_dir(output_root, app_name):
+    date_str = datetime.now().strftime("%Y-%m-%d")
+    date_dir = os.path.join(output_root, date_str)
+    os.makedirs(date_dir, exist_ok=True)
+    
+    max_count = 0
+    pattern = re.compile(rf"^{re.escape(app_name)}_(\d+)$")
+    if os.path.exists(date_dir):
+        for entry in os.listdir(date_dir):
+            if os.path.isdir(os.path.join(date_dir, entry)):
+                match = pattern.match(entry)
+                if match:
+                    try:
+                        count = int(match.group(1))
+                        if count > max_count:
+                            max_count = count
+                    except ValueError:
+                        pass
+    
+    next_count = max_count + 1
+    run_folder_name = f"{app_name}_{next_count:02d}"
+    return os.path.join(date_dir, run_folder_name)
+
 def run_perception_agent(user_instruction: str, output_dir: str = "output", headed: bool = False):
     """
     Perception-agent entry point.
@@ -588,10 +864,12 @@ def run_perception_agent(user_instruction: str, output_dir: str = "output", head
     perception to recapture pages whenever navigation or uncertainty occurs.
     """
     if looks_like_plain_url(user_instruction):
-        main_scraper(user_instruction, output_dir)
+        app_name = extract_app_name(user_instruction)
+        run_dir = get_next_run_dir(output_dir, app_name)
+        main_scraper(user_instruction, run_dir)
         return {
             "mode": "perception_only",
-            "output_dir": output_dir
+            "output_dir": run_dir
         }
 
     from execution_agent import ExecutionAgent

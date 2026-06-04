@@ -1,0 +1,81 @@
+[
+    {
+        "timestamp": "2026-06-04T12:34:26",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Instruction requires browser execution.",
+        "url": "data:,"
+    },
+    {
+        "timestamp": "2026-06-04T12:34:35",
+        "status": "ok",
+        "message": "Opened starting URL: https://automationexercise.com/",
+        "action": {
+            "action": "open",
+            "target": "https://automationexercise.com"
+        },
+        "matched_element": "",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:34:35",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: initial navigation",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:34:40",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: Automation Exercise",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:34:42",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Resolve target for action: click Products",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:34:42",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Resolved 'Products' to products_a with score 100",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-04T12:34:47",
+        "status": "ok",
+        "message": "Clicked products_a.",
+        "action": {
+            "action": "click",
+            "target": "Products",
+            "raw": "click Products"
+        },
+        "matched_element": "products_a",
+        "url": "https://automationexercise.com/products"
+    },
+    {
+        "timestamp": "2026-06-04T12:34:47",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: after action",
+        "url": "https://automationexercise.com/products"
+    },
+    {
+        "timestamp": "2026-06-04T12:34:53",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: Automation Exercise - All Products",
+        "url": "https://automationexercise.com/products"
+    }
+]

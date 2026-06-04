@@ -1,0 +1,18 @@
+[
+    {
+        "page_number": 1,
+        "title": "STORE",
+        "url": "https://www.demoblaze.com/",
+        "reason": "initial navigation",
+        "folder": "output\\2026-06-04\\demoblaze_01\\pages\\01_store",
+        "json": "output\\2026-06-04\\demoblaze_01\\pages\\01_store\\dom_observation.json"
+    },
+    {
+        "page_number": 2,
+        "title": "STORE",
+        "url": "https://www.demoblaze.com/#",
+        "reason": "after action",
+        "folder": "output\\2026-06-04\\demoblaze_01\\pages\\02_store",
+        "json": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\dom_observation.json"
+    }
+]

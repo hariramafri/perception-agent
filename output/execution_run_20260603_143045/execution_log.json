@@ -1,0 +1,117 @@
+[
+    {
+        "timestamp": "2026-06-03T14:30:50",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Instruction requires browser execution.",
+        "url": "data:,"
+    },
+    {
+        "timestamp": "2026-06-03T14:30:58",
+        "status": "ok",
+        "message": "Opened starting URL: https://automationexercise.com/",
+        "action": {
+            "action": "open",
+            "target": "https://automationexercise.com"
+        },
+        "matched_element": "",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T14:30:58",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: initial navigation",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T14:30:59",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: Automation Exercise",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T14:30:59",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Resolve target for action: click on add to cart for blue top",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T14:30:59",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Resolved 'add to cart for blue top' to rs_500_blue_top_add_to_cart_a with score 71",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T14:31:01",
+        "status": "ok",
+        "message": "Clicked rs_500_blue_top_add_to_cart_a.",
+        "action": {
+            "action": "click",
+            "target": "add to cart for blue top",
+            "raw": "click on add to cart for blue top"
+        },
+        "matched_element": "rs_500_blue_top_add_to_cart_a",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T14:31:01",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: before action",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T14:31:02",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: Automation Exercise",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T14:31:02",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Resolve target for action: click on view cart",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T14:31:02",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: confusion: could not resolve view cart",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T14:31:03",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: Automation Exercise",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-03T14:31:03",
+        "status": "needs_perception_guidance",
+        "message": "Could not confidently resolve target 'view cart'. Top candidates: [(42, 'view_product_a'), (42, 'rs_1500_add_to_cart'), (42, 'rs_600_add_to_cart'), (42, 'rs_400_add_to_cart'), (42, 'rs_500_blue_top_add_to_cart_a')]",
+        "action": {
+            "action": "click",
+            "target": "view cart",
+            "raw": "click on view cart"
+        },
+        "matched_element": "",
+        "url": "https://automationexercise.com/"
+    }
+]

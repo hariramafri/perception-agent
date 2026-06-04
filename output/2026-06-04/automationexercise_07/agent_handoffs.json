@@ -1,0 +1,90 @@
+[
+    {
+        "timestamp": "2026-06-04T13:40:36",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Instruction requires browser execution.",
+        "url": "data:,"
+    },
+    {
+        "timestamp": "2026-06-04T13:40:45",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: initial navigation",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-04T13:40:52",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: Automation Exercise",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-04T13:40:55",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Resolve target for action: click on add to cart for the blue top product",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-04T13:40:55",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Resolved 'add to cart for the blue top product' to rs_500_blue_top_add_to_cart_a with score 85",
+        "url": "https://automationexercise.com/"
+    },
+    {
+        "timestamp": "2026-06-04T13:40:58",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: after action",
+        "url": "https://automationexercise.com/#google_vignette"
+    },
+    {
+        "timestamp": "2026-06-04T13:41:03",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: Automation Exercise",
+        "url": "https://automationexercise.com/#google_vignette"
+    },
+    {
+        "timestamp": "2026-06-04T13:41:06",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Resolve target for action: click view cart from the add to cart pop up",
+        "url": "https://automationexercise.com/#google_vignette"
+    },
+    {
+        "timestamp": "2026-06-04T13:41:06",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Resolved 'view cart from the add to cart pop up' to rs_500_add_to_cart with score 62",
+        "url": "https://automationexercise.com/#google_vignette"
+    },
+    {
+        "timestamp": "2026-06-04T13:41:07",
+        "status": "agent_switch",
+        "from_agent": "Execution Agent",
+        "to_agent": "Perception Agent",
+        "reason": "Capture requested: after action",
+        "url": "https://automationexercise.com/#google_vignette"
+    },
+    {
+        "timestamp": "2026-06-04T13:41:14",
+        "status": "agent_switch",
+        "from_agent": "Perception Agent",
+        "to_agent": "Execution Agent",
+        "reason": "Capture complete: Automation Exercise",
+        "url": "https://automationexercise.com/#google_vignette"
+    }
+]

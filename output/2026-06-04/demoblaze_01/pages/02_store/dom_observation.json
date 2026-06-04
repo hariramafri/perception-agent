@@ -1,0 +1,1046 @@
+{
+    "url": "https://www.demoblaze.com/#",
+    "title": "STORE",
+    "capture_reason": "after action",
+    "full_page_screenshot": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\full_page.png",
+    "total_interactive_elements": 37,
+    "elements": [
+        {
+            "element_index": 0,
+            "page_order": 1,
+            "semantic_name": "product_store_a",
+            "tag_name": "a",
+            "inner_text": "PRODUCT STORE",
+            "attributes": {
+                "id": "nava",
+                "class": "navbar-brand",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/nav[1]/a[1]",
+            "rel_xpath": "//a[@id='nava']",
+            "css_path": "a#nava",
+            "bounding_box": {
+                "x": 16,
+                "y": 8,
+                "width": 227.25,
+                "height": 58
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0001_product_store_a.png"
+        },
+        {
+            "element_index": 1,
+            "page_order": 2,
+            "semantic_name": "home_current_a",
+            "tag_name": "a",
+            "inner_text": "Home\n(current)",
+            "attributes": {
+                "id": "",
+                "class": "nav-link",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/nav[1]/div[1]/ul[1]/li[1]/a[1]",
+            "rel_xpath": "//div[@id='navbarExample']/ul[contains(@class, 'navbar-nav ml-auto')]/li[contains(@class, 'nav-item active')][1]/a[contains(@class, 'nav-link')]",
+            "css_path": "div#navbarExample > ul.navbar-nav ml-auto > li.nav-item active > a.nav-link",
+            "bounding_box": {
+                "x": 764,
+                "y": 17.0625,
+                "width": 58.65625,
+                "height": 40
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0002_home_current_a.png"
+        },
+        {
+            "element_index": 2,
+            "page_order": 3,
+            "semantic_name": "contact",
+            "tag_name": "a",
+            "inner_text": "Contact",
+            "attributes": {
+                "id": "",
+                "class": "nav-link",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/nav[1]/div[1]/ul[1]/li[2]/a[1]",
+            "rel_xpath": "//div[@id='navbarExample']/ul[contains(@class, 'navbar-nav ml-auto')]/li[contains(@class, 'nav-item')][2]/a[contains(@class, 'nav-link')]",
+            "css_path": "div#navbarExample > ul.navbar-nav ml-auto > li.nav-item:nth-of-type(2) > a.nav-link",
+            "bounding_box": {
+                "x": 822.65625,
+                "y": 17.0625,
+                "width": 71.484375,
+                "height": 40
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0003_contact.png"
+        },
+        {
+            "element_index": 3,
+            "page_order": 4,
+            "semantic_name": "about_us",
+            "tag_name": "a",
+            "inner_text": "About us",
+            "attributes": {
+                "id": "",
+                "class": "nav-link",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/nav[1]/div[1]/ul[1]/li[3]/a[1]",
+            "rel_xpath": "//div[@id='navbarExample']/ul[contains(@class, 'navbar-nav ml-auto')]/li[contains(@class, 'nav-item')][3]/a[contains(@class, 'nav-link')]",
+            "css_path": "div#navbarExample > ul.navbar-nav ml-auto > li.nav-item:nth-of-type(3) > a.nav-link",
+            "bounding_box": {
+                "x": 894.140625,
+                "y": 17.0625,
+                "width": 79.46875,
+                "height": 40
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0004_about_us.png"
+        },
+        {
+            "element_index": 4,
+            "page_order": 5,
+            "semantic_name": "cart",
+            "tag_name": "a",
+            "inner_text": "Cart",
+            "attributes": {
+                "id": "cartur",
+                "class": "nav-link",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/nav[1]/div[1]/ul[1]/li[4]/a[1]",
+            "rel_xpath": "//a[@id='cartur']",
+            "css_path": "a#cartur",
+            "bounding_box": {
+                "x": 973.609375,
+                "y": 17.0625,
+                "width": 46.203125,
+                "height": 40
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0005_cart.png"
+        },
+        {
+            "element_index": 5,
+            "page_order": 6,
+            "semantic_name": "log_in_a",
+            "tag_name": "a",
+            "inner_text": "Log in",
+            "attributes": {
+                "id": "login2",
+                "class": "nav-link",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/nav[1]/div[1]/ul[1]/li[5]/a[1]",
+            "rel_xpath": "//a[@id='login2']",
+            "css_path": "a#login2",
+            "bounding_box": {
+                "x": 1019.8125,
+                "y": 17.0625,
+                "width": 57.859375,
+                "height": 40
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0006_log_in_a.png"
+        },
+        {
+            "element_index": 6,
+            "page_order": 7,
+            "semantic_name": "sign_up_a",
+            "tag_name": "a",
+            "inner_text": "Sign up",
+            "attributes": {
+                "id": "signin2",
+                "class": "nav-link",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/nav[1]/div[1]/ul[1]/li[8]/a[1]",
+            "rel_xpath": "//a[@id='signin2']",
+            "css_path": "a#signin2",
+            "bounding_box": {
+                "x": 1077.671875,
+                "y": 17.0625,
+                "width": 67.6875,
+                "height": 40
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0007_sign_up_a.png"
+        },
+        {
+            "element_index": 7,
+            "page_order": 8,
+            "semantic_name": "previous_a",
+            "tag_name": "a",
+            "inner_text": "Previous",
+            "attributes": {
+                "id": "",
+                "class": "carousel-control-prev",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "button",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/nav[1]/div[2]/div[1]/a[1]",
+            "rel_xpath": "//div[@id='carouselExampleIndicators']/a[contains(@class, 'carousel-control-prev')][1]",
+            "css_path": "div#carouselExampleIndicators > a.carousel-control-prev",
+            "bounding_box": {
+                "x": 215.109375,
+                "y": 77,
+                "width": 117.59375,
+                "height": 304.875
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0008_previous_a.png"
+        },
+        {
+            "element_index": 8,
+            "page_order": 9,
+            "semantic_name": "second_slide_img",
+            "tag_name": "img",
+            "inner_text": "",
+            "attributes": {
+                "id": "",
+                "class": "d-block img-fluid",
+                "name": "",
+                "aria-label": "",
+                "alt": "Second slide",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/nav[1]/div[2]/div[1]/div[1]/div[2]/img[1]",
+            "rel_xpath": "//div[@id='carouselExampleIndicators']/div[contains(@class, 'carousel-inner')][1]/div[contains(@class, 'carousel-item active')][2]/img[contains(@class, 'd-block img-fluid')]",
+            "css_path": "div#carouselExampleIndicators > div.carousel-inner > div.carousel-item active:nth-of-type(2) > img.d-block img-fluid",
+            "bounding_box": {
+                "x": 293.5,
+                "y": 77,
+                "width": 783.953125,
+                "height": 304.875
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0009_second_slide_img.png"
+        },
+        {
+            "element_index": 9,
+            "page_order": 10,
+            "semantic_name": "next_a",
+            "tag_name": "a",
+            "inner_text": "Next",
+            "attributes": {
+                "id": "",
+                "class": "carousel-control-next",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "button",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/nav[1]/div[2]/div[1]/a[2]",
+            "rel_xpath": "//div[@id='carouselExampleIndicators']/a[contains(@class, 'carousel-control-next')][2]",
+            "css_path": "div#carouselExampleIndicators > a.carousel-control-next:nth-of-type(2)",
+            "bounding_box": {
+                "x": 1038.296875,
+                "y": 77,
+                "width": 117.59375,
+                "height": 304.875
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0010_next_a.png"
+        },
+        {
+            "element_index": 10,
+            "page_order": 11,
+            "semantic_name": "sony_vaio_i5_categories",
+            "tag_name": "a",
+            "inner_text": "CATEGORIES",
+            "attributes": {
+                "id": "cat",
+                "class": "list-group-item",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Sony vaio i5",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/a[1]",
+            "rel_xpath": "//a[@id='cat']",
+            "css_path": "a#cat",
+            "bounding_box": {
+                "x": 122.5,
+                "y": 431.296875,
+                "width": 255,
+                "height": 63.5
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0011_sony_vaio_i5_categories.png"
+        },
+        {
+            "element_index": 11,
+            "page_order": 12,
+            "semantic_name": "sony_vaio_i5_a",
+            "tag_name": "a",
+            "inner_text": "",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Sony vaio i5",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][1]/div[contains(@class, 'card h-100')]/a[1]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4 > div.card h-100 > a",
+            "bounding_box": {
+                "x": 408.5,
+                "y": 432.296875,
+                "width": 252.984375,
+                "height": 142.21875
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0012_sony_vaio_i5_a.png"
+        },
+        {
+            "element_index": 12,
+            "page_order": 13,
+            "semantic_name": "sony_vaio_i7_a",
+            "tag_name": "a",
+            "inner_text": "",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Sony vaio i7",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[2]/div[1]/a[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][2]/div[contains(@class, 'card h-100')]/a[1]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4:nth-of-type(2) > div.card h-100 > a",
+            "bounding_box": {
+                "x": 693.484375,
+                "y": 432.296875,
+                "width": 252.984375,
+                "height": 142.21875
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0013_sony_vaio_i7_a.png"
+        },
+        {
+            "element_index": 13,
+            "page_order": 14,
+            "semantic_name": "macbook_air_a",
+            "tag_name": "a",
+            "inner_text": "",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "MacBook air",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[3]/div[1]/a[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][3]/div[contains(@class, 'card h-100')]/a[1]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4:nth-of-type(3) > div.card h-100 > a",
+            "bounding_box": {
+                "x": 978.46875,
+                "y": 432.296875,
+                "width": 252.984375,
+                "height": 142.21875
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0014_macbook_air_a.png"
+        },
+        {
+            "element_index": 14,
+            "page_order": 15,
+            "semantic_name": "sony_vaio_i5_phones",
+            "tag_name": "a",
+            "inner_text": "Phones",
+            "attributes": {
+                "id": "itemc",
+                "class": "list-group-item",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Sony vaio i5",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/a[2]",
+            "rel_xpath": "//a[@id='itemc']",
+            "css_path": "a#itemc",
+            "bounding_box": {
+                "x": 122.5,
+                "y": 493.796875,
+                "width": 255,
+                "height": 56
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0015_sony_vaio_i5_phones.png"
+        },
+        {
+            "element_index": 15,
+            "page_order": 16,
+            "semantic_name": "sony_vaio_i5_laptops",
+            "tag_name": "a",
+            "inner_text": "Laptops",
+            "attributes": {
+                "id": "itemc",
+                "class": "list-group-item",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Sony vaio i5",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/a[3]",
+            "rel_xpath": "//a[@id='itemc']",
+            "css_path": "a#itemc",
+            "bounding_box": {
+                "x": 122.5,
+                "y": 548.796875,
+                "width": 255,
+                "height": 56
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0016_sony_vaio_i5_laptops.png"
+        },
+        {
+            "element_index": 16,
+            "page_order": 17,
+            "semantic_name": "sony_vaio_i5",
+            "tag_name": "a",
+            "inner_text": "Sony vaio i5",
+            "attributes": {
+                "id": "",
+                "class": "hrefch",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Sony vaio i5",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/h4[1]/a[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][1]/div[contains(@class, 'card h-100')]/div[contains(@class, 'card-block')]/h4[contains(@class, 'card-title')][1]/a[contains(@class, 'hrefch')]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4 > div.card h-100 > div.card-block > h4.card-title > a.hrefch",
+            "bounding_box": {
+                "x": 428.5,
+                "y": 595.515625,
+                "width": 126.25,
+                "height": 24
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0017_sony_vaio_i5.png"
+        },
+        {
+            "element_index": 17,
+            "page_order": 18,
+            "semantic_name": "sony_vaio_i7",
+            "tag_name": "a",
+            "inner_text": "Sony vaio i7",
+            "attributes": {
+                "id": "",
+                "class": "hrefch",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Sony vaio i7",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/h4[1]/a[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][2]/div[contains(@class, 'card h-100')]/div[contains(@class, 'card-block')]/h4[contains(@class, 'card-title')][1]/a[contains(@class, 'hrefch')]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4:nth-of-type(2) > div.card h-100 > div.card-block > h4.card-title > a.hrefch",
+            "bounding_box": {
+                "x": 713.484375,
+                "y": 595.515625,
+                "width": 126.25,
+                "height": 24
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0018_sony_vaio_i7.png"
+        },
+        {
+            "element_index": 18,
+            "page_order": 19,
+            "semantic_name": "macbook_air",
+            "tag_name": "a",
+            "inner_text": "MacBook air",
+            "attributes": {
+                "id": "",
+                "class": "hrefch",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "MacBook air",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/h4[1]/a[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][3]/div[contains(@class, 'card h-100')]/div[contains(@class, 'card-block')]/h4[contains(@class, 'card-title')][1]/a[contains(@class, 'hrefch')]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4:nth-of-type(3) > div.card h-100 > div.card-block > h4.card-title > a.hrefch",
+            "bounding_box": {
+                "x": 998.46875,
+                "y": 595.515625,
+                "width": 132.5,
+                "height": 24
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0019_macbook_air.png"
+        },
+        {
+            "element_index": 19,
+            "page_order": 20,
+            "semantic_name": "sony_vaio_i5_monitors",
+            "tag_name": "a",
+            "inner_text": "Monitors",
+            "attributes": {
+                "id": "itemc",
+                "class": "list-group-item",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Sony vaio i5",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/a[4]",
+            "rel_xpath": "//a[@id='itemc']",
+            "css_path": "a#itemc",
+            "bounding_box": {
+                "x": 122.5,
+                "y": 603.796875,
+                "width": 255,
+                "height": 56
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0020_sony_vaio_i5_monitors.png"
+        },
+        {
+            "element_index": 20,
+            "page_order": 21,
+            "semantic_name": "sony_vaio_i5_790_h5",
+            "tag_name": "h5",
+            "inner_text": "$790",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Sony vaio i5",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/h5[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][1]/div[contains(@class, 'card h-100')]/div[contains(@class, 'card-block')]/h5[1]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4 > div.card h-100 > div.card-block > h5",
+            "bounding_box": {
+                "x": 428.5,
+                "y": 632.90625,
+                "width": 212.984375,
+                "height": 22
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0021_sony_vaio_i5_790_h5.png"
+        },
+        {
+            "element_index": 21,
+            "page_order": 22,
+            "semantic_name": "sony_vaio_i7_790_h5",
+            "tag_name": "h5",
+            "inner_text": "$790",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Sony vaio i7",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/h5[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][2]/div[contains(@class, 'card h-100')]/div[contains(@class, 'card-block')]/h5[1]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4:nth-of-type(2) > div.card h-100 > div.card-block > h5",
+            "bounding_box": {
+                "x": 713.484375,
+                "y": 632.90625,
+                "width": 212.984375,
+                "height": 22
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0022_sony_vaio_i7_790_h5.png"
+        },
+        {
+            "element_index": 22,
+            "page_order": 23,
+            "semantic_name": "macbook_air_700_h5",
+            "tag_name": "h5",
+            "inner_text": "$700",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "MacBook air",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/h5[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][3]/div[contains(@class, 'card h-100')]/div[contains(@class, 'card-block')]/h5[1]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4:nth-of-type(3) > div.card h-100 > div.card-block > h5",
+            "bounding_box": {
+                "x": 998.46875,
+                "y": 632.90625,
+                "width": 212.984375,
+                "height": 22
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0023_macbook_air_700_h5.png"
+        },
+        {
+            "element_index": 23,
+            "page_order": 24,
+            "semantic_name": "dell_i7_8gb_a",
+            "tag_name": "a",
+            "inner_text": "",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Dell i7 8gb",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[4]/div[1]/a[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][4]/div[contains(@class, 'card h-100')]/a[1]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4:nth-of-type(4) > div.card h-100 > a",
+            "bounding_box": {
+                "x": 408.5,
+                "y": 784.09375,
+                "width": 252.984375,
+                "height": 142.21875
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0024_dell_i7_8gb_a.png"
+        },
+        {
+            "element_index": 24,
+            "page_order": 25,
+            "semantic_name": "2017_dell_15_6_inch_a",
+            "tag_name": "a",
+            "inner_text": "",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "2017 Dell 15.6 Inch",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[5]/div[1]/a[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][5]/div[contains(@class, 'card h-100')]/a[1]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4:nth-of-type(5) > div.card h-100 > a",
+            "bounding_box": {
+                "x": 693.484375,
+                "y": 784.09375,
+                "width": 252.984375,
+                "height": 142.21875
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0025_2017_dell_15_6_inch_a.png"
+        },
+        {
+            "element_index": 25,
+            "page_order": 26,
+            "semantic_name": "macbook_pro_a",
+            "tag_name": "a",
+            "inner_text": "",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "MacBook Pro",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[6]/div[1]/a[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][6]/div[contains(@class, 'card h-100')]/a[1]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4:nth-of-type(6) > div.card h-100 > a",
+            "bounding_box": {
+                "x": 978.46875,
+                "y": 784.09375,
+                "width": 252.984375,
+                "height": 142.21875
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0026_macbook_pro_a.png"
+        },
+        {
+            "element_index": 26,
+            "page_order": 27,
+            "semantic_name": "dell_i7_8gb_a_order_26",
+            "tag_name": "a",
+            "inner_text": "Dell i7 8gb",
+            "attributes": {
+                "id": "",
+                "class": "hrefch",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Dell i7 8gb",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[4]/div[1]/div[1]/h4[1]/a[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][4]/div[contains(@class, 'card h-100')]/div[contains(@class, 'card-block')]/h4[contains(@class, 'card-title')][1]/a[contains(@class, 'hrefch')]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4:nth-of-type(4) > div.card h-100 > div.card-block > h4.card-title > a.hrefch",
+            "bounding_box": {
+                "x": 428.5,
+                "y": 947.3125,
+                "width": 113.90625,
+                "height": 24
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0027_dell_i7_8gb_a_order_26.png"
+        },
+        {
+            "element_index": 27,
+            "page_order": 28,
+            "semantic_name": "2017_dell_15_6_inch_a_order_27",
+            "tag_name": "a",
+            "inner_text": "2017 Dell 15.6 Inch",
+            "attributes": {
+                "id": "",
+                "class": "hrefch",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "2017 Dell 15.6 Inch",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/h4[1]/a[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][5]/div[contains(@class, 'card h-100')]/div[contains(@class, 'card-block')]/h4[contains(@class, 'card-title')][1]/a[contains(@class, 'hrefch')]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4:nth-of-type(5) > div.card h-100 > div.card-block > h4.card-title > a.hrefch",
+            "bounding_box": {
+                "x": 713.484375,
+                "y": 947.3125,
+                "width": 208.40625,
+                "height": 24
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0028_2017_dell_15_6_inch_a_order_27.png"
+        },
+        {
+            "element_index": 28,
+            "page_order": 29,
+            "semantic_name": "macbook_pro",
+            "tag_name": "a",
+            "inner_text": "MacBook Pro",
+            "attributes": {
+                "id": "",
+                "class": "hrefch",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "MacBook Pro",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[6]/div[1]/div[1]/h4[1]/a[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][6]/div[contains(@class, 'card h-100')]/div[contains(@class, 'card-block')]/h4[contains(@class, 'card-title')][1]/a[contains(@class, 'hrefch')]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4:nth-of-type(6) > div.card h-100 > div.card-block > h4.card-title > a.hrefch",
+            "bounding_box": {
+                "x": 998.46875,
+                "y": 947.3125,
+                "width": 142.109375,
+                "height": 24
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0029_macbook_pro.png"
+        },
+        {
+            "element_index": 29,
+            "page_order": 30,
+            "semantic_name": "dell_i7_8gb_700_h5",
+            "tag_name": "h5",
+            "inner_text": "$700",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Dell i7 8gb",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[4]/div[1]/div[1]/h5[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][4]/div[contains(@class, 'card h-100')]/div[contains(@class, 'card-block')]/h5[1]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4:nth-of-type(4) > div.card h-100 > div.card-block > h5",
+            "bounding_box": {
+                "x": 428.5,
+                "y": 984.703125,
+                "width": 212.984375,
+                "height": 22
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0030_dell_i7_8gb_700_h5.png"
+        },
+        {
+            "element_index": 30,
+            "page_order": 31,
+            "semantic_name": "2017_dell_15_6_inch_700_h5",
+            "tag_name": "h5",
+            "inner_text": "$700",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "2017 Dell 15.6 Inch",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/h5[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][5]/div[contains(@class, 'card h-100')]/div[contains(@class, 'card-block')]/h5[1]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4:nth-of-type(5) > div.card h-100 > div.card-block > h5",
+            "bounding_box": {
+                "x": 713.484375,
+                "y": 984.703125,
+                "width": 212.984375,
+                "height": 22
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0031_2017_dell_15_6_inch_700_h5.png"
+        },
+        {
+            "element_index": 31,
+            "page_order": 32,
+            "semantic_name": "macbook_pro_1100_h5",
+            "tag_name": "h5",
+            "inner_text": "$1100",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "MacBook Pro",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[6]/div[1]/div[1]/h5[1]",
+            "rel_xpath": "//div[@id='tbodyid']/div[contains(@class, 'col-lg-4 col-md-6 mb-4')][6]/div[contains(@class, 'card h-100')]/div[contains(@class, 'card-block')]/h5[1]",
+            "css_path": "div#tbodyid > div.col-lg-4 col-md-6 mb-4:nth-of-type(6) > div.card h-100 > div.card-block > h5",
+            "bounding_box": {
+                "x": 998.46875,
+                "y": 984.703125,
+                "width": 212.984375,
+                "height": 22
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0032_macbook_pro_1100_h5.png"
+        },
+        {
+            "element_index": 32,
+            "page_order": 33,
+            "semantic_name": "sony_vaio_i5_previous_button",
+            "tag_name": "button",
+            "inner_text": "Previous",
+            "attributes": {
+                "id": "prev2",
+                "class": "page-link",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Sony vaio i5",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/form[1]/ul[1]/li[1]/button[1]",
+            "rel_xpath": "//button[@id='prev2']",
+            "css_path": "button#prev2",
+            "bounding_box": {
+                "x": 1094.296875,
+                "y": 1134.890625,
+                "width": 83.046875,
+                "height": 36.328125
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0033_sony_vaio_i5_previous_button.png"
+        },
+        {
+            "element_index": 33,
+            "page_order": 34,
+            "semantic_name": "sony_vaio_i5_next_button",
+            "tag_name": "button",
+            "inner_text": "Next",
+            "attributes": {
+                "id": "next2",
+                "class": "page-link",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "Sony vaio i5",
+            "abs_xpath": "/html[1]/body[1]/div[5]/div[1]/div[2]/form[1]/ul[1]/li[2]/button[1]",
+            "rel_xpath": "//button[@id='next2']",
+            "css_path": "button#next2",
+            "bounding_box": {
+                "x": 1176.34375,
+                "y": 1134.890625,
+                "width": 56.15625,
+                "height": 36.328125
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0034_sony_vaio_i5_next_button.png"
+        },
+        {
+            "element_index": 34,
+            "page_order": 35,
+            "semantic_name": "about_us_h4",
+            "tag_name": "h4",
+            "inner_text": "About Us",
+            "attributes": {
+                "id": "",
+                "class": "grrrr",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "",
+            "abs_xpath": "/html[1]/body[1]/div[6]/div[1]/div[1]/div[1]/div[1]/h4[1]",
+            "rel_xpath": "//div[@id='fotcont']/div[contains(@class, 'col-sm-4 col-lg-4 col-md-4')][1]/div[contains(@class, 'thumbnail')]/div[contains(@class, 'caption')]/h4[contains(@class, 'grrrr')][1]",
+            "css_path": "div#fotcont > div.col-sm-4 col-lg-4 col-md-4 > div.thumbnail > div.caption > h4.grrrr",
+            "bounding_box": {
+                "x": 151.5,
+                "y": 1236.21875,
+                "width": 379.5,
+                "height": 26.390625
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0035_about_us_h4.png"
+        },
+        {
+            "element_index": 35,
+            "page_order": 36,
+            "semantic_name": "about_us_get_in_touch_h4",
+            "tag_name": "h4",
+            "inner_text": "Get in Touch",
+            "attributes": {
+                "id": "",
+                "class": "grrrr",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "About Us",
+            "abs_xpath": "/html[1]/body[1]/div[6]/div[1]/div[2]/div[1]/div[1]/h4[1]",
+            "rel_xpath": "//div[@id='fotcont']/div[contains(@class, 'col-sm-3 col-lg-3 col-md-3')][2]/div[contains(@class, 'thumbnail')]/div[contains(@class, 'caption')]/h4[contains(@class, 'grrrr')][1]",
+            "css_path": "div#fotcont > div.col-sm-3 col-lg-3 col-md-3:nth-of-type(2) > div.thumbnail > div.caption > h4.grrrr",
+            "bounding_box": {
+                "x": 563,
+                "y": 1236.21875,
+                "width": 276.625,
+                "height": 26.390625
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0036_about_us_get_in_touch_h4.png"
+        },
+        {
+            "element_index": 36,
+            "page_order": 37,
+            "semantic_name": "about_us_product_store_h4",
+            "tag_name": "h4",
+            "inner_text": "PRODUCT STORE",
+            "attributes": {
+                "id": "",
+                "class": "",
+                "name": "",
+                "aria-label": "",
+                "alt": "",
+                "title": "",
+                "role": "",
+                "data-testid": ""
+            },
+            "context_hint": "About Us",
+            "abs_xpath": "/html[1]/body[1]/div[6]/div[1]/div[3]/div[1]/div[1]/h4[1]",
+            "rel_xpath": "//div[@id='fotcont']/div[contains(@class, 'col-sm-4 col-lg-4 col-md-4')][3]/div[contains(@class, 'thumbnail')]/div[contains(@class, 'caption')]/h4",
+            "css_path": "div#fotcont > div.col-sm-4 col-lg-4 col-md-4:nth-of-type(3) > div.thumbnail > div.caption > h4",
+            "bounding_box": {
+                "x": 871.625,
+                "y": 1236.21875,
+                "width": 379.5,
+                "height": 50
+            },
+            "screenshot_path": "output\\2026-06-04\\demoblaze_01\\pages\\02_store\\0037_about_us_product_store_h4.png"
+        }
+    ],
+    "fingerprint": "434:46685"
+}
